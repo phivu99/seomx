@@ -198,10 +198,10 @@ p {
   font-family: "Manrope", sans-serif;
 }
 
-.p-18 {
+.p-16 {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   color: #120A21;
   font-family: "Manrope", sans-serif;
 }
@@ -214,7 +214,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
 }
 
@@ -224,29 +224,38 @@ h1 {
 }
 
 h2 {
-  font-size: 52px;
-  line-height: 62px;
+  font-size: 42px;
+  line-height: 50px;
 }
 
 h3 {
   font-size: 24px;
-  line-height: 34px;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: 20px;
   line-height: 30px;
 }
 
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 h5 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 h6 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.title-24 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.title-14 {
+  font-size: 14px;
+  line-height: 30px;
 }
 
 /* Extra classes
@@ -489,7 +498,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-3 a:focus, .link-style-3 a:hover {
-  color: #ff9c00;
+  color: #8B54FF;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -547,7 +556,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-6 a:focus, .link-style-6 a:hover {
-  color: #45ab49;
+  color: #FFD80D;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -559,7 +568,7 @@ a:focus, a:hover {
 
 .link-style-7 a {
   text-decoration: none;
-  color: #617798;
+  color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -567,7 +576,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-7 a:focus, .link-style-7 a:hover {
-  color: #8B54FF;
+  color: #FFD80D;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -598,7 +607,7 @@ a:focus, a:hover {
 }
 
 .text-color-6 {
-  color: #45ab49 !important;
+  color: #FFD80D !important;
 }
 
 /* Root
@@ -610,7 +619,7 @@ a:focus, a:hover {
   right: 0px;
   font-size: 17px;
   font-weight: 600;
-  background: #45ab49;
+  background: #FFD80D;
   color: #fff;
   border: none;
   line-height: 20px;
@@ -653,7 +662,7 @@ a:focus, a:hover {
 }
 .search-form .search-field:focus {
   color: #120A21;
-  border: 1px solid #45ab49;
+  border: 1px solid #FFD80D;
   border-radius: 5px;
   line-height: 24px;
   padding: 10px 50px 10px 19px;
@@ -680,7 +689,7 @@ a:focus, a:hover {
   color: #120A21;
 }
 .header_1.is-fixed #main-nav > ul > .current-menu-item > a {
-  color: #45ab49;
+  color: #FFD80D;
 }
 
 .header_1.is-fixed.is-small {
@@ -725,9 +734,9 @@ a:focus, a:hover {
   overflow: hidden;
 }
 .themesflat-pagination ul li .page-numbers:hover, .themesflat-pagination ul li .page-numbers.current {
-  background-color: #45ab49;
+  background-color: #FFD80D;
   color: #fff;
-  border-color: #45ab49;
+  border-color: #FFD80D;
 }
 .themesflat-pagination ul li .page-numbers.style {
   line-height: 45px;
@@ -831,7 +840,7 @@ a:focus, a:hover {
 #box {
   width: 50px;
   height: 50px;
-  background: #45ab49;
+  background: #FFD80D;
   animation: animate 0.5s linear infinite;
   position: absolute;
   top: 0;
@@ -1015,7 +1024,7 @@ a:focus, a:hover {
   font-weight: 600;
   line-height: 30px;
   color: #fff;
-  background: #45ab49;
+  background: #FFD80D;
   padding-left: 22px;
   margin-bottom: 10px;
 }

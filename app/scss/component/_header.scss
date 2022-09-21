@@ -36,8 +36,8 @@ header {
 
 #site-header-inner {
     position: absolute;
-    left: 20.8%;
-    top: 50%;
+    left: 19.4%;
+    top: 46%;
     border: 1px solid #00234B;
     z-index: 0;
     @include transitionY;
@@ -45,20 +45,18 @@ header {
     z-index: 999;
     .wrap-inner {
         position: relative;
-        padding: 0 50px;
+        padding: 0 56px 0 74px;
         background: #FFF4E7;
         &::before {
             content: "";
-            
             position: absolute;
             height: 100%;
             width: 100%;
             left  : 0;
             z-index: -8;
             background: $color-2;
-            border-radius: 5px;
-            left: 4px;
-            bottom: -4px;
+            left: 8px;
+            bottom: -8px;
             @include transition3;
             // transform: translateX(-5%);
          
@@ -339,7 +337,11 @@ header {
     transform: translateY(-50%);
     position: absolute;
     right: 0px;
-    top: 50%;
+    top: 45.5%;
+    margin-right: 4px;
+    .sc-btn-top {
+        margin-top: 7px;
+    }
 }
 
 /* Menu
@@ -361,7 +363,8 @@ header {
     >ul {
         >li {
             float: left;
-            padding: 20px 3px 20px 4.5px;
+            padding: 21px 3px 25px 4.3px;
+            z-index: 9;
             >a {
                 position: relative;
                 font-size: 18px;
@@ -524,7 +527,7 @@ header {
 
 #main-nav .sub-menu li.current-item a,
 #main-nav .sub-menu li a:hover {
-    color: $color-6;
+    color: $color-3;
 }
 
 #main-nav {
@@ -553,7 +556,7 @@ header {
                             position: absolute;
                             width: 0;
                             height: 2px;
-                            background: $color-6;
+                            background: $color-3;
                             left: 15px;
                             top: 28px;
                             @include transition3;
@@ -770,15 +773,31 @@ header {
     }
 }
 
+.menu-bar-right {
+    background: #FFD80D;
+    @include flex-center;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-right: 50px;
+    box-shadow: 7px 8px 0 black;
+    border: 1px solid $color-2;
+    &:hover svg {
+        fill: $color-1;
+    }
+    svg {
+        @include transition3;
+    }
+}
 // 
 .header-search {
     position: relative;
     // margin-right: 6px;
-    padding: 24px 0 10px;
+    padding: 26px 0 10px;
     margin-left: 23px;
     i {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin-right: 25px;
         
         &:hover {
