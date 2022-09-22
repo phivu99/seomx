@@ -811,9 +811,9 @@ header {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0;
   width: 100%;
-  max-width: 370px;
+  max-width: 430px;
+  padding: 0 15px;
   height: 100%;
   overflow-y: auto;
   background-color: #fff;
@@ -1241,7 +1241,7 @@ path.two {
 }
 
 .flat-subscribe {
-  padding: 54px 0;
+  padding: 101px 0;
   background-color: #8B54FF;
   margin: 0 62px;
 }
