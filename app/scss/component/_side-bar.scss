@@ -2,99 +2,76 @@
 
 /* side bar */
 .search-flat {
+    margin-right: 6px;
     .search-form {
         .search-field {
-            width: 100%;
-            padding: 14px 50px 12px 19px;
+            box-shadow: 5px 5px 0 black;
             &::placeholder {
-                color: $color-2 !important;
-                line-height: 20px;
-                font-size: 18px !important;
-                letter-spacing: -0.05px;
-            }
-            &:focus {
-                border: 1px solid $color-3;
-                border-radius: 5px;
-                padding: 14px 50px 12px 19px;
+                color: $color-1 !important;
             }
         }    
-        .search-submit {
-            padding: 15.5px 17.5px 14.5px;
-        }
+
     }
 }
 
 .side-bar {
-    padding: 6px 0 0 29px;
+    // padding: 6px 0 0 29px;
         .widget {
-            background-color: $bg-color;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
+            padding: 32px 38px 44px 39px;
+            border: 1px solid $color-2;
             &:last-child {
                 margin-bottom: 0px;
             }     
         }
-        .widget-author {
-            background-color: $bg-color;
-            padding: 30px 18px 22px;
-            .images {
-                border-radius: 50%;
-                width: 145px;
-                height: 145px;
-                display: inline-block;
-                overflow: hidden;
-                box-shadow: 0px 16px 35px rgb(0 0 0 / 16%);
-                border: 10px solid #fff;
-                margin-bottom: 13px;
-                img {
-                    object-fit: none;
-                }
+        .widget-search {
+            // padding: 32px 38px 44px;
+        }
+        .widget-marketing  {
+            background-color: #FFE8CE;
+            border: 0px;
+            padding: 34px 34px 41px;
+            .titles {
+                margin-bottom: 23px;
             }
-            h3 {
-                margin-bottom: 4px;
-            }
-            h5 {
-                margin-bottom: 14px;
-            }
-            p {
-                margin-bottom: 25px;
-            }
-            .icon-social {
-                i {
-                    margin-left: 8px;
-                    margin-right: 8px;
-                }
+            .buttons {
+                margin-bottom: 35px;
             }
         }
         .widget-title {
             position: relative;   
             padding-left: 1px;
+            &.title-search {
+                margin-bottom: 19px; 
+            }
             &.title-list {
                 margin-bottom: 23px;
             }
             &.title-news {
-                margin-bottom: 18px;
+                margin-bottom: 24px;
             }
             &.title-tags {
                 margin-bottom: 24px;
             }
         }
     .widget-tags {
-        padding: 23px 20px 12px;
+        // padding: 23px 20px 12px;
+        padding: 32px 38px 27px 39px;
         .tags_cloud_inner {
             a {
                 display: inline-block;
-                padding: 5px 21.5px 5px;
-                font-size: 18px;
+                padding: 5px 15.5px 5px;
+                font-size: 16px;
                 font-weight: 600;
-                border-radius: 5px;
-                margin-right: 10px;
+                margin-right: 14px;
                 margin-bottom: 16px;
-                background-color: $color-1;
+                background-color: $bg-color2;
                 @include transition3;
+                box-shadow: 3px 3px 0 $color-2;
                 &.active,
                 &:hover {
                     color: $color-1;
-                    background-color: $color-6;
+                    background-color: $color-3;
                 }
             }
         }
@@ -102,55 +79,107 @@
 
     /* recent news */
     .widget-menu {
-        padding: 23px 20px 28px;
+        // padding: 32px 38px 44px;
         .recent-news {
             li {
-                margin-bottom: 26px;
+                margin-bottom: 25px;
                 &:last-child {
                     margin-bottom: 0px !important;
                 }           
                 .thumb {
                     position: relative;
-                    padding-top: 1px;
-                    border-radius: 3px;
                     overflow     : hidden; 
-                    width: 80px;
-                    height: 80px; 
+                    width: 90px;
+                    height: 90px; 
                     flex: none;
+                    box-shadow: 5px 5px 0 $color-2;
+                    @include transition3;
                 }
                 .content {         
-                    padding-left: 20px;
-                   
+                    padding-left: 35px;
+                    padding-top: 5px;   
+                    .days {
+                        font-size: 14px;
+                        margin-bottom: 4.5px;
+                        color: $color-3;
+                        &::before {
+                            content: "\f272";
+                            font-family: "Font Awesome 5 Pro";
+                            font-size: 16px;
+                            margin-right: 10px;
+                            font-weight: 300;
+                            color: $color-3;
+                        }
+                    }           
                     .title {
-                        letter-spacing: 0.25px;
-                        margin-bottom: 0;
+                       line-height: 23px;
                     }
                     h5 {
                         margin-bottom: 0;
                     }
                 }
+                &:hover .thumb{
+                    box-shadow: 5px 5px 0 $color-3;
+                }
             }   
         }
     }
+    // .widget {
+    //     .recent-news {
+    //         li {
+    //             margin-bottom: 41px;
+    //             &:last-child {
+    //                 margin-bottom: 0px !important;
+    //             }          
+    //             .thumb {
+    //                 position: relative;
+    //                 border-radius: 3px;
+    //                 overflow     : hidden; 
+    //                 width: 90px;
+    //                 height: 90px; 
+    //                 flex: none;
+    //             }
+    
+    //             .content {         
+    //                 padding-left: 20px;
+    //                 h5 {
+    //                     margin-bottom: 10px;
+    //                 }
+    //                 h6 {
+    //                     font-family: $font-2;
+    //                     color: $color-3 !important;
+    //                     transition        : all 0s ease;
+    //                 }
+    //             }
+    //         }   
+    //     }
+    // }
     .widget-categories {
-        padding: 23px 20px 29px;
+        // padding: 32px 38px 44px;
         li {
             position: relative;
-            margin-bottom: 18px;
-            border-radius: 5px;
-            padding: 12px 17px;
-            background: $color-1;
-            border-left: 5px solid #d3d3d3;
+            margin-bottom: 24px;
+            padding: 20px 18px 16px 20px;
+            background: $bg-color;
             @include transition3;
+            margin-right: 6px;
+            box-shadow: 5px 5px 0 black;
             a {
-                color: $color-4;
-                font-weight: 500;
-                letter-spacing: 0.1px;
+                color: $color-2;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
+                
+                &::after {
+                    content: "\f054";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 14px;
+                    font-weight: 700;
+                }
             }
             &.active,
             &:hover {
-                background: $color-6;
-                border-left: 5px solid $color-6;
+                background: $color-3;
                 @include transition3;
                 a {
                     color: $color-1;

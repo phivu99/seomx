@@ -380,7 +380,7 @@ button {
 
 .title-30 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 36px;
 }
 
 .title-36 {
@@ -590,12 +590,13 @@ a {
         top: 0px;
         right: 0px;
         font-size: 17px;
-        font-weight: 600;
-        background: $color-6;
+        font-weight: 400;
+        background: transparent;
         color: $color-1;
         border: none;
         line-height: 20px;
-        padding: 13px 14.5px 11px;
+        // padding: 13px 14.5px 11px;
+        padding: 17.5px 21.5px 17px;
         @include transition3;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -614,27 +615,24 @@ a {
 .search-form {
     position: relative;
     .search-field {
-        background: #f6f6f6;
-        color: $color-2;
-        width: 540px;
-        border: 1px solid #f6f6f6;
+        background: $color-3;
+        color: $color-1;
+        width: 100%;
+        border: 1px solid $color-3;
         line-height: 24px;
-        padding: 10px 50px 10px 19px;
-        border-radius: 5px;
+        padding: 15px 50px 14px 20px;
+        border-radius: 0;
         &::placeholder {
-            color: $color-4 !important;
+            color: $color-1 !important;
             line-height: 19px;
             font-size: 16px !important;
             font-weight: 400;
-            letter-spacing: 0.4px;
+            font-family: $font-2;
+            font-weight: 400;
         }
         &:focus {
-            color: $color-2;
-            // width: 100%;
-            border: 1px solid $color-6;
-            border-radius: 5px;
-            line-height: 24px;
-            padding: 10px 50px 10px 19px;
+            color: $color-1;
+            border: 1px solid $color-2;
         }
     }
 }
@@ -672,43 +670,75 @@ a {
 -------------------------------------------------------------- */
 
 .themesflat-pagination {
-    margin-top: 30px;
+    display: inline-block;
+    background-color: $bg-color;
+    border: 1px solid $color-2;
+    padding: 21px 50px 31px;
+    margin-top: 59px;
     ul {
         position: relative;
+       
         li {
             display     : inline-block;
-            margin-right: 6px;
+            margin-right: 15px;
             &:last-child {
                 margin-right: 0;
             }
+            &.style-left {
+                margin-right: 42px;
+            }
+            &.style-right {
+                margin-left: 25px;
+            }
             .page-numbers {
                 display      : inline-block;
-                font-size    : 20px;
-                font-weight  : 600;
-                color        : $color-2;
-                text-align   : center;
-                width        : 46px;
-                height       : 46px;
-                line-height  : 48px;
+                width        : 10px;
+                height       : 10px;           
                 border-radius: 200px;
-                background-color: #f3f6f0;
+                background-color: $color-2;
                 object-fit   : cover;  
                 position: relative;  
                 @include transition3;
-                overflow: hidden;
-                &:hover,
-                &.current {
-                    background-color: $color-6;
-                    color           : #fff;
-                    border-color    : $color-6;
-                }  
+                // overflow: hidden;
+                &.numbers {
+                    margin-top: 16px !important;
+                }
+                &::before { 
+                    @include transition3;
+                }
 
+                &:hover,
+                &.current {                   
+                    &.numbers {
+                        margin: 0 15px;
+                        &::before {
+                            content: "";
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid $color-2;
+                            border-radius: 50%;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                        }
+                    }               
+                }  
                 &.style {
-                    line-height: 45px;
+                    width        : 65px;
+                    height       : 65px;
+                    color        : $color-1;
+                    text-align   : center;
+                    line-height  : 65px;
+                    box-shadow: 2px 6px 0 $color-6;
                     i {
-                        font-size: 24px;
-                        font-weight: 600;
+                        font-size: 22px;
+                        font-weight: 400;
                         vertical-align: middle;
+                    }
+                    &:hover {
+                        box-shadow: 2px 6px 0 $color-2;
+                        background: $color-3;
                     }
                 }
             }
@@ -809,7 +839,7 @@ a {
   #box {
     width: 50px;
     height: 50px;
-    background: $color-6;
+    background: $color-3;
     animation: animate .5s linear infinite;
     position: absolute;
     top: 0;
@@ -862,25 +892,23 @@ a {
     }
 }
 
-.side-bar {
-    .search-field {
-        &::placeholder {
-            font-size: 13px;
-        }
-    }
-}
-
 // heading 
 .heading-section {
     margin-bottom: 52px;
-    h5 {
-        margin-bottom: 15px;
+    h6 {
+        margin-bottom: 26px;
         margin-left: 1px;
-        text-transform: uppercase;
-        color: $color-3;
+        // text-transform: uppercase;
+        color: $color-2;
+        padding: 10px 20px;
+        display: inline-block;
+        background: $color-1;
+        border-radius: 5px;
+        box-shadow: 5px 5px 0 $color-2;
     }
     h2 {
-        font-weight: 700;
+        // font-weight: 700;
+        letter-spacing: -0.9px;
         text-transform: capitalize;
     }
     &.style {

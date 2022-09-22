@@ -51,6 +51,13 @@
     top: 12%;
   }
   
+  &.btn-1 {
+    background: $color-2;
+    box-shadow: 5px 5px 0 $color-6;
+    &:hover {
+      box-shadow: 8px 8px 0 $color-3;
+    }
+  }
 }
 
 .cta:focus {

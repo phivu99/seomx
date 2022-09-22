@@ -368,7 +368,7 @@ button {
 
 .title-30 {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 36px;
 }
 
 .title-36 {
@@ -618,12 +618,12 @@ a:focus, a:hover {
   top: 0px;
   right: 0px;
   font-size: 17px;
-  font-weight: 600;
-  background: #FFD80D;
+  font-weight: 400;
+  background: transparent;
   color: #fff;
   border: none;
   line-height: 20px;
-  padding: 13px 14.5px 11px;
+  padding: 17.5px 21.5px 17px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -645,27 +645,25 @@ a:focus, a:hover {
   position: relative;
 }
 .search-form .search-field {
-  background: #f6f6f6;
-  color: #120A21;
-  width: 540px;
-  border: 1px solid #f6f6f6;
+  background: #8B54FF;
+  color: #fff;
+  width: 100%;
+  border: 1px solid #8B54FF;
   line-height: 24px;
-  padding: 10px 50px 10px 19px;
-  border-radius: 5px;
+  padding: 15px 50px 14px 20px;
+  border-radius: 0;
 }
 .search-form .search-field::placeholder {
-  color: #617798 !important;
+  color: #fff !important;
   line-height: 19px;
   font-size: 16px !important;
   font-weight: 400;
-  letter-spacing: 0.4px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
 }
 .search-form .search-field:focus {
-  color: #120A21;
-  border: 1px solid #FFD80D;
-  border-radius: 5px;
-  line-height: 24px;
-  padding: 10px 50px 10px 19px;
+  color: #fff;
+  border: 1px solid #120A21;
 }
 
 /* Header Fixed */
@@ -701,29 +699,34 @@ a:focus, a:hover {
 /* Pagination
 -------------------------------------------------------------- */
 .themesflat-pagination {
-  margin-top: 30px;
+  display: inline-block;
+  background-color: #FFF4E7;
+  border: 1px solid #120A21;
+  padding: 21px 50px 31px;
+  margin-top: 59px;
 }
 .themesflat-pagination ul {
   position: relative;
 }
 .themesflat-pagination ul li {
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 15px;
 }
 .themesflat-pagination ul li:last-child {
   margin-right: 0;
 }
+.themesflat-pagination ul li.style-left {
+  margin-right: 42px;
+}
+.themesflat-pagination ul li.style-right {
+  margin-left: 25px;
+}
 .themesflat-pagination ul li .page-numbers {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  color: #120A21;
-  text-align: center;
-  width: 46px;
-  height: 46px;
-  line-height: 48px;
+  width: 10px;
+  height: 10px;
   border-radius: 200px;
-  background-color: #f3f6f0;
+  background-color: #120A21;
   object-fit: cover;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -731,20 +734,47 @@ a:focus, a:hover {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  overflow: hidden;
 }
-.themesflat-pagination ul li .page-numbers:hover, .themesflat-pagination ul li .page-numbers.current {
-  background-color: #FFD80D;
-  color: #fff;
-  border-color: #FFD80D;
+.themesflat-pagination ul li .page-numbers.numbers {
+  margin-top: 16px !important;
+}
+.themesflat-pagination ul li .page-numbers::before {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.themesflat-pagination ul li .page-numbers:hover.numbers, .themesflat-pagination ul li .page-numbers.current.numbers {
+  margin: 0 15px;
+}
+.themesflat-pagination ul li .page-numbers:hover.numbers::before, .themesflat-pagination ul li .page-numbers.current.numbers::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid #120A21;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 .themesflat-pagination ul li .page-numbers.style {
-  line-height: 45px;
+  width: 65px;
+  height: 65px;
+  color: #fff;
+  text-align: center;
+  line-height: 65px;
+  box-shadow: 2px 6px 0 #FFD80D;
 }
 .themesflat-pagination ul li .page-numbers.style i {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 400;
   vertical-align: middle;
+}
+.themesflat-pagination ul li .page-numbers.style:hover {
+  box-shadow: 2px 6px 0 #120A21;
+  background: #8B54FF;
 }
 
 /* Scroll Top
@@ -840,7 +870,7 @@ a:focus, a:hover {
 #box {
   width: 50px;
   height: 50px;
-  background: #FFD80D;
+  background: #8B54FF;
   animation: animate 0.5s linear infinite;
   position: absolute;
   top: 0;
@@ -900,21 +930,21 @@ a:focus, a:hover {
     transform: rotate(360deg);
   }
 }
-.side-bar .search-field::placeholder {
-  font-size: 13px;
-}
-
 .heading-section {
   margin-bottom: 52px;
 }
-.heading-section h5 {
-  margin-bottom: 15px;
+.heading-section h6 {
+  margin-bottom: 26px;
   margin-left: 1px;
-  text-transform: uppercase;
-  color: #8B54FF;
+  color: #120A21;
+  padding: 10px 20px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #120A21;
 }
 .heading-section h2 {
-  font-weight: 700;
+  letter-spacing: -0.9px;
   text-transform: capitalize;
 }
 .heading-section.style {

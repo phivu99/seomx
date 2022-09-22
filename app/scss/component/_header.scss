@@ -828,7 +828,7 @@ header {
 .top-search {
     position: absolute;
     right: -16px;
-    top: 150%;
+    top: 108%;
     width: 250px;
     opacity: 0;
     visibility: hidden;
@@ -853,6 +853,8 @@ header {
                 width       : 99%;
                 padding: 13px 50px 13px 15px;
                 border-radius   : 10px !important; 
+                color: $color-2;
+                background      : $color-1;
             }
             &::placeholder {
                 color: #010C2A;
