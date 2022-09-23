@@ -191,7 +191,7 @@ input[type=color]::placeholder {
 
 .text-p,
 p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #120A21;
@@ -204,6 +204,12 @@ p {
   line-height: 26px;
   color: #120A21;
   font-family: "Manrope", sans-serif;
+}
+
+.tp-16 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.15px;
 }
 
 /* Typography
@@ -248,6 +254,11 @@ h6 {
   line-height: 20px;
 }
 
+.title-16 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 .title-24 {
   font-size: 24px;
   line-height: 30px;
@@ -256,6 +267,21 @@ h6 {
 .title-14 {
   font-size: 14px;
   line-height: 30px;
+}
+
+.title-30 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.title-35 {
+  font-size: 35px;
+  line-height: 44px;
+}
+
+.title-36 {
+  font-size: 36px;
+  line-height: 40px;
 }
 
 /* Extra classes
@@ -366,16 +392,6 @@ button {
   cursor: pointer;
 }
 
-.title-30 {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.title-36 {
-  font-size: 36px;
-  line-height: 40px;
-}
-
 .font {
   font-family: "Outfit", sans-serif;
 }
@@ -402,6 +418,14 @@ button {
 
 .lh-28 {
   line-height: 28px;
+}
+
+.lh-29 {
+  line-height: 29px;
+}
+
+.lh-30 {
+  line-height: 30px;
 }
 
 .mb-203 {
