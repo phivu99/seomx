@@ -202,9 +202,15 @@ input[type="color"]::placeholder {
 p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 30px;
     color: $color-2;
     font-family: $font-2;
+}
+
+.p-14 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .p-16 {
@@ -428,6 +434,10 @@ button {
 
 .fw-7 {
     font-weight: 700
+}
+
+.lh-26 {
+    line-height: 26px
 }
 
 .lh-28 {
