@@ -231,8 +231,8 @@ h6 {
 }
 
 h1 {
-  font-size: 72px;
-  line-height: 82px;
+  font-size: 75px;
+  line-height: 82.5px;
 }
 
 h2 {
@@ -543,7 +543,7 @@ a:focus, a:hover {
 
 .link-style-4 a {
   text-decoration: none;
-  color: #f1f1f1;
+  color: #F43FE2;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;

@@ -34,11 +34,11 @@
 
     <div id="wrapper">
         <div id="page" class="clearfix">
-            <header id="header_main" class="header_1 js-header">
+            <header id="header_main" class="header_1 js-header home">
                 <div class="container-fuild ">
                     <div class="row"> 
                         <div class="col-md-12">                              
-                            <div id="site-header-wrap"> 
+                            <div id="site-header-wrap" class="header-home"> 
                                 <div class="wrap-box relative">
                                     <div id="site-logo" class="clearfix">
                                         <div id="site-logo-inner">
@@ -53,7 +53,7 @@
                                         <div class="wrap-inner clearfix flex">                               
                                             <nav id="main-nav" class="main-nav">                                      
                                                 <ul id="menu-primary-menu" class="menu">
-                                                    <li class="menu-item menu-item-has-children">
+                                                    <li class="menu-item menu-item-has-children current-menu-item">
                                                         <a href="index.html">Home</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="index.html">Home 01</a></li>
@@ -87,7 +87,7 @@
                                                         </ul>                                      
                                                     </li>
 
-                                                    <li class="menu-item menu-item-has-children current-menu-item">                                       
+                                                    <li class="menu-item menu-item-has-children ">                                       
                                                         <a href="#">Blog</a>
                                                         <ul class="sub-menu">                                                 
                                                             <li class="menu-item current-item"><a href="blog.html">Blog</a></li>
@@ -103,7 +103,7 @@
                                             
                                             </nav><!-- /#main-nav -->  
                                             
-                                            <div class="header-search flat-show-search" id="s1">
+                                            <div class="header-search flat-show-search shadows" id="s1">
                                                 <a href="#" class="show-search header-search-trigger">
                                                     <span class="icon-Vector"><i class="far fa-search"></i></span>
                                                 </a>
@@ -127,7 +127,7 @@
                                             </svg>
                                         </a>                
                                         <div class="sc-btn-top" id="site-header">
-                                            <a class="cta" href="#">
+                                            <a class="cta btn-2" href="#">
                                                 <span>Get Started</span>
                                                 <span>
                                                   <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -153,9 +153,9 @@
                         <div class="side-menu__top justify-content-end">
                             <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="assets/images/common/close.png" alt="images"></a>
                         </div>
-                        <aside class="side-bar ">
+                        <aside class="side-bar">
                             <div class="inner-side-bar">                                       
-                                <div class="widget widget-search search "> 
+                                <div class="widget widget-search search"> 
                                     <h3 class="widget-title title-search">
                                         Search
                                     </h3>                                 
@@ -244,268 +244,60 @@
                 </div>
             </header>
                 
-            <!-- title page -->
-            <section class="flat-title-page inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="page-title-heading">   
-                                <div class="heading-inner">
-                                    <div class="heading"><span>Blog List View</span> </div>
-                                    <div class="title-inner link-style-7">
-                                        <h5 class="font-2"><a class="home" href="index.html">Home</a><span>Blog List</span></h5>
+                  <!-- slider -->
+                <section class="slider home">
+                    <div class="swiper-container mainslider2">                            
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="flat-slider">  
+                                        <div class="img-slider">
+                                            <img class="img-item" src="assets/images/slider/bg-slider-1.png" alt="">
+                                        </div>
+                                        <div class="container  flex">      
+                                            <div class="content">
+                                                <div class="heading">
+                                                    <h6 class="sub-title">20% OFF Best SEO Agency</h6>
+                                                    <h1>We’re Creative SEO Solutions Agency</h1>
+                                                    <h4 class="fw-4">Sit amet consectetur adipiscing elit Massa diam tincidunt. 
+                                                        Nibh posuere aliquam et sit imperdiet sagittis tempus arcus 
+                                                        nulla quis est a cursus sit quis nibh platea.</h4>
+                                                </div>
+                                                <div class="sc-btn-top">
+                                                    <a class="cta" href="#">
+                                                        <span>Get Started</span>
+                                                        <span>
+                                                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                                <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                                <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                                            </g>
+                                                            </svg>
+                                                        </span> 
+                                                    </a>
+                                                </div>                            
+                                            </div> 
+                                            <div class="images">
+                                                <div class="image">
+                                                    <img class="img-item" src="assets/images/slider/slider-1.png" alt="">
+                                                </div>
+                                            </div>                                       
+                                        </div>
                                     </div>
-                                </div>                     
-                                
-                            </div>                        
-                        </div>
-                        <div class="col-md-7">
-                               <div class="images">
-                                    <img class="img-item" src="assets/images/mark/mark-inner-page.png" alt="">
-                               </div>                   
+                                </div>                                             
+                            </div>
                         </div>
                     </div>
-                </div>                    
-            </section>
+                    <!-- <div class="button-custom-slider">
+                        <div class="swiper-button-next3 button-slide-custom-next"><i class="far fa-angle-right"></i></div>
+                        <div class="swiper-button-prev3 button-slide-custom-prev"><i class="far fa-angle-left"></i> </div>
+                    </div> -->
+                </section>  
 
             <section class="tf-section flat-blog">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-md-6 col-sm-12">
-                            <div class="post">
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">How Partytown Eliminates Website Bloat From Party</a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-1.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div> 
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">Boos Resource Load With fetchpriority, A New Priority Hint</a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-2.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div> 
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">How To Get Work Dones Wranglinge Stakeholders </a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-3.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div>  
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">Build A Progressively Enhanced, Accessible Filterable & Pagin </a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-4.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div> 
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">Jobs For Designers And Developers Affected By The</a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-5.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div> 
-                                <div class="blog-box flex-one">
-                                    <div class="content">
-                                        <div class="days p-16">September 25, 2022</div>                                                              
-                                        <div class="titles"><a href="blog-details.html">Windows Contrast Mode, Forced Colors Mode CSS Custom </a></div>
-                                        <p class="lh-26">Drive more leads, sales, and revenue for business digital marketing,</p>
-                                        <div class="meta">
-                                            <a href="blog-details.html" class="btn-button flex-three fw-5"><span>Read More </span> 
-                                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z" fill="#120A21"/>
-                                            </svg>  </a>                            
-                                        </div>
-                                    </div> 
-                                    <div class="media">
-                                        <img class="img-item" src="assets/images/blog/blog-6.jpg" alt="">
-                                        <span class="hover-one"></span>
-                                    </div>                                                                                                  
-                                </div> 
-                            </div>
-                                                  
-                        </div>
-                                   
-                        <div class="col-lg-4 col-md-12">
-                            <aside class="side-bar">
-                                <div class="inner-side-bar">                                       
-                                    <div class="widget widget-search search"> 
-                                        <h3 class="widget-title title-search">
-                                            Search
-                                        </h3>                                 
-                                        <div class="search-flat">
-                                            <form action="#" method="get" role="search" class="search-form">
-                                                <input type="search" class="search-field"
-                                                    placeholder="Search here" value="" name="s"
-                                                    title="Search for" required="">
-                                                <button class="search-icon search-submit" type="submit" title="Search"></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="widget widget-categories style"> 
-                                        <h3 class="widget-title title-list">
-                                            Category
-                                        </h3>                                                                                                                        
-                                        <ul>
-                                            <li>
-                                                <h6><a href="blog.html">Digital Marketing</a></h6>
-                                            </li>
-                                            <li class="active">
-                                                <h6><a href="blog.html">SEO Optimization</a></h6>
-                                            </li>
-                                            <li>
-                                                <h6><a href="blog.html">Email Marketing</a></h6>
-                                            </li>
-                                            <li>
-                                                <h6><a href="blog.html">Content Writing</a></h6>
-                                            </li>
-                                            <li>
-                                                <h6><a href="blog.html">UI/UX Strategy</a></h6>
-                                            </li>  
-                                            <li>
-                                                <h6><a href="blog.html">Web Development</a></h6>
-                                            </li>                              
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget widget-menu">
-                                        <h3 class="widget-title title-news">
-                                            Recent Post
-                                        </h3>                       
-                                        <ul class="recent-news ">
-                                            <li class="hover-img flex">
-                                                <div class="thumb img-style ">
-                                                    <img class="img" src="assets/images/blog/news-1.jpg" alt="images">
-                                                </div>
-                                                <div class="content link-style-1">    
-                                                    <div class="days p-16">September 25, 2022</div>                              
-                                                    <h6 class="title"><a href="blog-details.html">Fluid Sizing Instead Of Media Queries</a></h6>
-                                                </div>
-                                            </li>
-                                            <li class="hover-img flex">
-                                                <div class="thumb img-style ">
-                                                    <img class="img" src="assets/images/blog/news-2.jpg" alt="images">
-                                                </div>
-                                                <div class="content link-style-1">    
-                                                    <div class="days p-16">September 25, 2022</div>                              
-                                                    <h6 class="title"><a href="blog-details.html">Fluid Sizing Instead Of Media Queries</a></h6>
-                                                </div>
-                                            </li>
-                                            <li class="hover-img flex">
-                                                <div class="thumb img-style ">
-                                                    <img class="img" src="assets/images/blog/news-3.jpg" alt="images">
-                                                </div>
-                                                <div class="content link-style-1">    
-                                                    <div class="days p-16">September 25, 2022</div>                              
-                                                    <h6 class="title"><a href="blog-details.html">Fluid Sizing Instead Of Media Queries</a></h6>
-                                                </div>
-                                            </li>
-                                            <li class="hover-img flex">
-                                                <div class="thumb img-style ">
-                                                    <img class="img" src="assets/images/blog/news-4.jpg" alt="images">
-                                                </div>
-                                                <div class="content link-style-1">    
-                                                    <div class="days p-16">September 25, 2022</div>                              
-                                                    <h6 class="title"><a href="blog-details.html">Fluid Sizing Instead Of Media Queries</a></h6>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div> 
-
-                                    <div class="widget widget-marketing center">  
-                                        <div class="titles title-30 fw-6">Let’s Start New Marketing Project</div> 
-                                        <div class="buttons">
-                                            <a class="cta" href="#">
-                                                <span>Get Started</span>
-                                                <span>
-                                                  <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                      <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                                      <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                                      <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                                                    </g>
-                                                  </svg>
-                                                </span> 
-                                              </a>
-                                        </div>  
-                                        <div class="images">
-                                            <img class="img-item" src="assets/images/blog/blog-sidebar-1.png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="widget widget-tags">
-                                        <h3 class="widget-title title-tags">
-                                            Popular Tag
-                                        </h3>     
-                                        <div class="tags_cloud_inner">
-                                            <a href="blog.html" class="active">SEO</a>
-                                            <a href="blog.html">Digital</a>
-                                            <a href="blog.html">Marketing</a>
-                                            <a href="blog.html">Writing</a>
-                                            <a href="blog.html">UI Design</a>
-                                            <a href="blog.html">Develop</a>  
-                                            <a href="blog.html">UX/UI Strategy</a>
-                                            <a href="blog.html">Analytics</a>                                  
-                                        </div>                                                                                                       
-                                    </div> 
-                                </div>
-                            </aside>
-                        </div>
-
                         <div class="col-lg-12">
                             <div class="themesflat-pagination clearfix">
                                 <ul class="flex-three">
@@ -706,6 +498,7 @@
     <script src="app/js/jquery.easing.js"></script>
     <script src="app/js/bootstrap.min.js"></script>
     <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
 
     <script src="app/js/plugin.js"></script>
     <script src="app/js/shortcodes.js"></script>

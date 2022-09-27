@@ -58,6 +58,14 @@
       box-shadow: 8px 8px 0 $color-3;
     }
   }
+  &.btn-2 {
+    padding: 12px 38px 12px 40px;
+    box-shadow: unset;
+    background: #00234B;
+    &:hover {
+      box-shadow: 5px 5px 0 $color-7;
+    }
+  }
 }
 
 .cta:focus {

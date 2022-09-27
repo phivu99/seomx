@@ -208,10 +208,9 @@
             }
         };
 
-    // Mobile Navigation
     var mobileNav = function () {
         var mobile = window.matchMedia("(max-width: 991px)");
-        var wrapMenu = $("#site-header-wrap .wrap-box");
+        var wrapMenu = $("#site-header-inner .wrap-inner");
         var navExtw = $(".nav-extend.active");
         var navExt = $(".nav-extend.active").children();
     
