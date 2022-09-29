@@ -1538,6 +1538,11 @@ path.two {
   animation-delay: 0.2s;
 }
 
+.flat-icon .icon-box .icon {
+  flex: none;
+  margin-right: 10px;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
