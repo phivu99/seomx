@@ -194,20 +194,16 @@
     }
     .slider-item {
         position: relative;
-        padding: 260px 0 200px;
+        padding: 260px 0 157px;
         color: $color-5;
-
         .content {
             margin-left: -2px;
             width: 39%;
             .heading {
-                margin-bottom: 35px;
+                margin-bottom: 32px;
             }
             .sub-title {
-                // font-size: 30px;
-                // font-weight: 500;
                 background: #5C28CA;
-                
                 color: $color-1;
                 margin-bottom: 31px;
                 display: inline-block;
@@ -345,42 +341,42 @@
     bottom: 0 !important; 
 }
 
-.slider .swiper-pagination2 {
-    position: absolute;
-    bottom: 5.3%;
-    left: 20.1%;
-    z-index: 9;
-}
+// .slider .swiper-pagination2 {
+//     position: absolute;
+//     bottom: 5.3%;
+//     left: 20.1%;
+//     z-index: 9;
+// }
 
-.slider .swiper-pagination-bullet {
-    width: unset;
-    height: unset;
-    background: unset;
-    opacity: 1;
-    margin-right: 23px !important;
-    z-index: 99;
-    color: $color-3;
-    font-size: 16px;
-    font-weight: 500;
-}
+// .slider .swiper-pagination-bullet {
+//     width: unset;
+//     height: unset;
+//     background: unset;
+//     opacity: 1;
+//     margin-right: 23px !important;
+//     z-index: 99;
+//     color: $color-3;
+//     font-size: 16px;
+//     font-weight: 500;
+// }
 
-.slider .swiper-pagination-bullet {
-    background: unset;
-    &.swiper-pagination-bullet-active {
-        margin-left: 130px;
-        position: relative;
-        &::before {
-            @include transition3;
-            position: absolute;
-            left: -128px;
-            top: 10px;
-            content: "";
-            width: 105px;
-            height: 0.5px !important;
-            background-color: $color-3;
-        }
-    }
-}
+// .slider .swiper-pagination-bullet {
+//     background: unset;
+//     &.swiper-pagination-bullet-active {
+//         margin-left: 130px;
+//         position: relative;
+//         &::before {
+//             @include transition3;
+//             position: absolute;
+//             left: -128px;
+//             top: 10px;
+//             content: "";
+//             width: 105px;
+//             height: 0.5px !important;
+//             background-color: $color-3;
+//         }
+//     }
+// }
 
 
 .flat-team {
@@ -401,30 +397,34 @@
     }
 }
 
-.flat-testimonials {
+.slider {
     .swiper-pagination {
-        position: relative;
-        margin-top: 155px;
+        position: absolute;
+        text-align: unset;
+        left: 16%;
+        bottom: 12%;
     }
     .swiper-pagination-bullet {
-        background: $color-3;
-        width: 10px;
-        height: 10px;
-        margin: 0 8px !important;
+        background: $color-8;
+        width: 7px;
+        height: 7px;
+        margin: 0 4px !important;
         opacity: 1;
+        @include transition3;
         &.swiper-pagination-bullet-active {
-            background-color: $color-3 !important;
-            opacity: 1;
+            position: relative;
+            margin: 0 10px !important;
                &::before {
                 @include transition3;
                 position: absolute;
-                transform: translate(-50%, -61%);
+                transform: translate(-50%, -50%);
                 top: 50%;
+                left: 50%;
                 border-radius: 50%;
                 content: "";
-                width : 19px;
-                height: 19px;
-                border: 1px solid $color-3;
+                width : 21px;
+                height: 21px;
+                border: 1px solid $color-8;
                 overflow: visible;
             }
         }

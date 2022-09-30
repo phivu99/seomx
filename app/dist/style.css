@@ -970,10 +970,10 @@ a:focus, a:hover {
 .heading-section h6 {
   margin-bottom: 26px;
   margin-left: 1px;
-  color: #120A21;
+  color: #fff;
   padding: 10px 20px;
   display: inline-block;
-  background: #fff;
+  background: #5C28CA;
   border-radius: 5px;
   box-shadow: 5px 5px 0 #120A21;
 }
@@ -983,6 +983,26 @@ a:focus, a:hover {
 }
 .heading-section.style {
   margin-bottom: 24px;
+}
+.heading-section.style2 h6 {
+  background: #fff;
+  color: #120A21;
+}
+
+.heading-section2 {
+  margin-bottom: 52px;
+}
+.heading-section2 h6 {
+  margin-bottom: 20px;
+  margin-left: 1px;
+  color: #fff;
+  display: inline-block;
+  background: #5C28CA;
+  border-radius: 5px;
+  padding: 9px 20px 7px;
+}
+.heading-section2 h2 {
+  letter-spacing: -1.25px;
 }
 
 .dropdown > a {

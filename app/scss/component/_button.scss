@@ -63,7 +63,17 @@
     box-shadow: unset;
     background: #00234B;
     &:hover {
+      box-shadow: 5px 5px 0 #00234B;
+      background: $color-7;
+    }
+  }
+  &.btn-3 {
+    padding: 12px 38px 12px 40px;
+    box-shadow: unset;
+    background: $color-7;
+    &:hover {
       box-shadow: 5px 5px 0 $color-7;
+      background: #00234B;
     }
   }
 }

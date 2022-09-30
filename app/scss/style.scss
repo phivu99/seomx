@@ -935,10 +935,10 @@ a {
         margin-bottom: 26px;
         margin-left: 1px;
         // text-transform: uppercase;
-        color: $color-2;
+        color: $color-1;
         padding: 10px 20px;
         display: inline-block;
-        background: $color-1;
+        background: #5C28CA;
         border-radius: 5px;
         box-shadow: 5px 5px 0 $color-2;
     }
@@ -950,6 +950,29 @@ a {
     &.style {
         margin-bottom: 24px;
     } 
+    &.style2 {
+        h6 {
+            background: $color-1;
+            color: $color-2;
+        }
+       
+    } 
+}
+
+.heading-section2 {
+    margin-bottom: 52px;
+    h6 {
+        margin-bottom: 20px;
+        margin-left: 1px;
+        color: $color-1;
+        display: inline-block;
+        background: #5C28CA;
+        border-radius: 5px;
+        padding: 9px 20px 7px;
+    }
+    h2 {
+        letter-spacing: -1.25px;
+    }
 }
 
 // dropdown
