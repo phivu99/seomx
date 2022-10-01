@@ -703,21 +703,151 @@
 
 .flat-services {
     background: url(./../../assets/images/mark/mark-service2.png)  center center no-repeat;
+    padding-bottom: 120px;
     .heading-section2 {
         padding: 0 240px;
+        margin-bottom: 39px;
     }
     .box {
         background: $color-1;
-        padding: 40px;
+        padding: 39px 45px;
+        box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
+        border-radius: 10px;
+        margin-bottom: 30px;
         .icon {
-            margin-bottom: 20px;
+            margin-bottom: 31px;
         }
         .content {
             h4 {
-                margin-bottom: 5px;
+                margin-bottom: 14px;
             }
             p {
-                margin-bottom: 10px;
+                margin-bottom: 27px;
+            }
+        }
+        &.box-1 {
+            margin-top: 10px;       
+        }
+        &.box-2 {
+            margin-top: 30px;  
+        }
+        &.box-4 {
+            margin-top: 20px;  
+        }
+    }
+}
+
+.flat-process {
+    padding-bottom: 87px;
+    .wrap-process {
+        padding-left: 66px;
+    }
+    .box-process {
+        width: 57.3%;
+        background: url(./../../assets/images/section/bg-diagram.jpg)  center center no-repeat;
+        background-size: cover;
+        padding: 80px 75px;
+        flex: none;
+        .heading-section2 {
+            padding-right: 300px;
+            h6 {
+                margin-bottom: 22px;
+            }
+        }
+        .diagram-box {
+            padding-left: 6px;
+            position: relative;
+            .mark-diagram {
+                left: -75px;
+                top: 35px;
+            }
+        }
+        .diagram {
+            width: 245px;
+            margin-right: 50px;
+            z-index: 3;
+            .icon {
+                width: 80px;
+                height: 80px;
+                @include flex-center;
+                border: 1px solid $color-8;
+                background-color: $color-1;
+                border-radius: 50%;
+                display: inline-flex;
+                margin-bottom: 20px;
+            }
+            .content {
+                background-color: $color-1;
+                border-radius: 12px;
+                padding: 25px 15px 20px;
+                .sub-title {
+                    letter-spacing: 2.8px;
+                    color: $color-9;
+                    margin-bottom: 6px;
+                }
+                h6 {
+                    line-height: 23px;
+                    padding: 0 14px;
+                    margin-bottom: 5px;
+                }
+            }
+            &.two {
+                margin-top: 61px;
+            }
+            &.three {
+                margin-top: 5px;
+            }
+        }
+    }
+    .box-client {
+        padding: 35px 75px;
+        h6 {
+            margin-bottom: 6px;
+        }
+        h3 {
+            letter-spacing: -0.7px;
+            margin-bottom: 30px;
+        }
+        ul li {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            margin-right: -24px;
+            overflow: hidden;
+            @include transition3;
+            &.style {
+                background-color: $color-7;
+                @include flex-center;
+                font-size: 22px;
+                color: $color-1;
+                z-index: 1;
+                cursor: pointer;
+            }
+            &:hover {
+                z-index: 5;
+            }
+        }
+        .images {
+            position: absolute;
+            bottom: -87px;
+            right: 76px;
+            z-index: -1;
+        }
+    }
+}
+
+.flat-growing {
+    .wrap-growing {
+        .box-1 {
+            width: 50%;
+        }
+        .heading-section2 {
+            margin-bottom: 0;
+            h2 {
+                margin-bottom: 25px;
+            }
+            p {
+                margin-bottom: 25px;
             }
         }
     }

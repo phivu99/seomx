@@ -272,7 +272,7 @@ h6 {
 
 .title-14 {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 18px;
 }
 
 .title-30 {
@@ -426,6 +426,10 @@ button {
   line-height: 26px;
 }
 
+.lh-27 {
+  line-height: 27px;
+}
+
 .lh-28 {
   line-height: 28px;
 }
@@ -543,7 +547,7 @@ a:focus, a:hover {
 
 .link-style-4 a {
   text-decoration: none;
-  color: #F43FE2;
+  color: #120A21;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -551,7 +555,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-4 a:focus, .link-style-4 a:hover {
-  color: #ff9c00;
+  color: #F43FE2;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -642,6 +646,10 @@ a:focus, a:hover {
 
 .text-color-6 {
   color: #FFD80D !important;
+}
+
+.text-color-7 {
+  color: #617798 !important;
 }
 
 /* Root
@@ -990,7 +998,7 @@ a:focus, a:hover {
 }
 
 .heading-section2 {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 }
 .heading-section2 h6 {
   margin-bottom: 20px;

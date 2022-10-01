@@ -282,7 +282,7 @@ h6 {
 
 .title-14 {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 18px;
 }
 
 .title-30 {
@@ -440,6 +440,10 @@ button {
     line-height: 26px
 }
 
+.lh-27 {
+    line-height: 27px
+}
+
 .lh-28 {
     line-height: 28px
 }
@@ -533,11 +537,11 @@ a {
 
 .link-style-4 a {
     text-decoration: none;
-    color: $color-7;
+    color: $color-2;
     @include transition3;
     &:focus,
     &:hover {
-        color: #ff9c00;
+        color: $color-7;
         text-decoration: none;
         @include transition3;
     }
@@ -606,7 +610,9 @@ a {
     color: $color-6 !important;
 }
 
-
+.text-color-7 {
+    color: #617798 !important;
+}
 
 /* Root
 -------------------------------------------------------------- */
@@ -960,7 +966,7 @@ a {
 }
 
 .heading-section2 {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     h6 {
         margin-bottom: 20px;
         margin-left: 1px;

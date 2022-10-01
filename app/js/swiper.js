@@ -40,12 +40,12 @@ var swiper =  new Swiper(".mainslider2", {
         prevEl: ".swiper-button-prev3",
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination2",
         clickable: true,
     },
 });
 
-var swiper =  new Swiper(".carousel", {
+var swiper =  new Swiper(".carousel-1", {
     // autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,
