@@ -1741,17 +1741,96 @@ path.two {
   z-index: -1;
 }
 
-.flat-growing .wrap-growing .box-1 {
-  width: 50%;
+.flat-growing {
+  border-bottom: 1px solid #00234B;
+  padding-bottom: 0;
 }
-.flat-growing .wrap-growing .heading-section2 {
+.flat-growing .wrap-growing .box-images {
+  width: 50%;
+  border-right: 1.5px solid #00234B;
+  background-size: cover;
+}
+.flat-growing .wrap-growing .box-images .images {
+  margin-left: -157px;
+  background: url(./../../assets/images/mark/growing-1.png) center no-repeat;
+  padding: 130px 0px;
+}
+.flat-growing .wrap-growing .box-growing {
+  width: 50%;
+  padding: 212px 0px 0 101px;
+}
+.flat-growing .wrap-growing .box-growing .heading-section2 {
   margin-bottom: 0;
 }
-.flat-growing .wrap-growing .heading-section2 h2 {
-  margin-bottom: 25px;
+.flat-growing .wrap-growing .box-growing .heading-section2 h6 {
+  margin-bottom: 22px;
 }
-.flat-growing .wrap-growing .heading-section2 p {
-  margin-bottom: 25px;
+.flat-growing .wrap-growing .box-growing .heading-section2 h2 {
+  margin-bottom: 22px;
+}
+.flat-growing .wrap-growing .box-growing .heading-section2 p {
+  margin-bottom: 40px;
+}
+
+.flat-projects .box .image-box {
+  position: relative;
+}
+.flat-projects .box .image-box .images {
+  padding-top: 46px;
+}
+.flat-projects .box .image-box .content {
+  background: #00234B;
+  position: absolute;
+  top: 0;
+  width: 294px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  padding: 15px 10px;
+}
+.flat-projects .box .image-box .content h3 {
+  letter-spacing: -0.9px;
+  margin-bottom: 6px;
+}
+.flat-projects .box .image-box .content .btn-button {
+  justify-content: center;
+  color: #fff !important;
+}
+.flat-projects .box.style .image-box .images {
+  padding-top: 0px;
+}
+.flat-projects .box.style .image-box .content {
+  bottom: -46px;
+  top: unset;
+}
+
+.flat-partners {
+  background: linear-gradient(180deg, rgba(92, 40, 202, 0.07) 0%, rgba(244, 63, 226, 0.07) 104.02%);
+}
+.flat-partners .wrap-partners .box-partners {
+  flex: none;
+  padding-left: 307px;
+  width: 44%;
+}
+.flat-partners .wrap-partners .box-partners .heading-section2 {
+  margin-bottom: 0;
+}
+.flat-partners .wrap-partners .box-partners .heading-section2 h2 {
+  margin-bottom: 23px;
+}
+.flat-partners .wrap-partners .box-partners .heading-section2 p {
+  margin-bottom: 20px;
+}
+.flat-partners .wrap-partners .box-images .image {
+  width: 352px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* Footer
