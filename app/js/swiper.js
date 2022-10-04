@@ -83,16 +83,18 @@ var swiper =  new Swiper(".carousel-2", {
     //     delay: 5000,
     //     disableOnInteraction: false,
     //     },
-    loop:false,
+    loop:true,
     slidesPerView: 1,
     spaceBetween: 30,
+    initialSlide: 1,
+    centeredSlides: true,
     navigation: {
         clickable: true,
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination2",
         clickable: true,
     },
     breakpoints: {
@@ -112,7 +114,7 @@ var swiper =  new Swiper(".carousel-3", {
         delay: 6000,
         disableOnInteraction: false,
     },
-    slidesPerView: 2,   
+    slidesPerView: 1,   
     loop: true,
     spaceBetween: 30,
     pagination: {
@@ -120,17 +122,13 @@ var swiper =  new Swiper(".carousel-3", {
         clickable: true,
       },
     breakpoints: {
-        550: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 5,
-            spaceBetween: 52,
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
     },
 });

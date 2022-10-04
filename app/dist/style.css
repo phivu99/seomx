@@ -652,6 +652,10 @@ a:focus, a:hover {
   color: #617798 !important;
 }
 
+.text-color-8 {
+  color: #F43FE2 !important;
+}
+
 /* Root
 -------------------------------------------------------------- */
 /* Search */
