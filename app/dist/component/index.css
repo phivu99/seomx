@@ -1663,6 +1663,11 @@ path.two {
   margin-right: 18px;
   margin-top: 1px;
 }
+.flat-icon .icon-box .icon svg {
+  -webkit-transition: background 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s;
+}
 .flat-icon .icon-box .content .sub-title {
   margin-bottom: 5px;
 }
@@ -1683,6 +1688,51 @@ path.two {
 }
 .flat-icon .icon-box:hover {
   background: url(./../../assets/images/mark/mark-icon.png) center center no-repeat;
+}
+.flat-icon .icon-box:hover .icon svg {
+  -webkit-animation: spinAround 2s linear infinite;
+  -moz-animation: spinAround 2s linear infinite;
+  animation: spinAround 2s linear infinite;
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinAround {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Effect 6 */
+.hi-icon-effect-6 .hi-icon {
+  box-shadow: 0 0 0 4px rgb(255, 255, 255);
+}
+
+.hi-icon-effect-6 .hi-icon:hover {
+  background: rgb(255, 255, 255);
+  color: #64bb5d;
+}
+
+.hi-icon-effect-6 .hi-icon:hover:before {
+  -webkit-animation: spinAround 2s linear infinite;
+  -moz-animation: spinAround 2s linear infinite;
+  animation: spinAround 2s linear infinite;
 }
 
 .flat-services {
