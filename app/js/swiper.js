@@ -110,15 +110,15 @@ var swiper =  new Swiper(".carousel-2", {
 });
 
 var swiper =  new Swiper(".carousel-3", {
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
     slidesPerView: 1,   
     loop: true,
     spaceBetween: 30,
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination2",
         clickable: true,
       },
     breakpoints: {

@@ -241,9 +241,7 @@
                 background: $color-2;
             }
         }
-        
     }
-    
     .comment {
         font-size: 18px;
         line-height: 28px;
@@ -269,7 +267,7 @@
         padding: 20px 75px 0 5px;
         .heading-section {
             margin-bottom: 50px;
-        }
+        }   
         .icon-title {
             p {
                 display: flex;
@@ -282,8 +280,9 @@
                     border-radius: 50%;
                 }
             }
-        }       
+        }  
     }
+   
     .images {
         padding-left: 57px;
         position: relative;
@@ -312,7 +311,56 @@
         right: 99px;
         top: 78px;
     }
-    
+    &.home {
+        margin: 0 306px 0px 306px;
+        box-shadow: unset;
+        border-radius: 12px;
+        padding: 60px 0 50px;
+        background: url(./../../assets/images/section/bg-newsletter.jpg)  center center no-repeat;
+        background-size: cover;
+        z-index: 2;
+       
+            
+            .heading-section2 {
+                padding: 0px 75px 0 66px;
+                margin-bottom: 0px;
+                h6 {
+                    margin-bottom: 22px;
+                }
+            }
+            .wrap-subscribe {
+                padding: 22px 70px 0 0px;
+                margin-left: -5px;
+                p {
+                    display: flex;
+                    &::before {
+                        border: 2px solid $color-9;
+                        opacity: 0.3;
+                    }
+                }
+            }
+            .widget-subcribe {
+                margin-bottom: 14px;
+                .form-subcribe button {
+                    right: 7px;
+                    top: 7px;
+                    padding: 12px 40px 12px 40px;
+                    box-shadow: unset;
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    svg {
+                        margin-top: -2px;
+                    }
+                    &:hover {
+                        background: $color-7;
+                    }
+                }
+            }
+            
+            
+    }
     
 }
 
@@ -728,7 +776,7 @@
         }
         &:hover {
             background: url(./../../assets/images/mark/mark-icon.png)  center center no-repeat;
-
+          
         }
     }
 }
@@ -748,6 +796,9 @@
         margin-bottom: 30px;
         .icon {
             margin-bottom: 31px;
+            img {
+                transition: all 0.8s ease;
+            }
         }
         .content {
             h4 {
@@ -765,6 +816,11 @@
         }
         &.box-4 {
             margin-top: 20px;  
+        }
+        &:hover {
+            .icon img {
+                transform: rotateY(180deg);
+            }
         }
     }
 }
@@ -807,6 +863,9 @@
                 border-radius: 50%;
                 display: inline-flex;
                 margin-bottom: 20px;
+                img {
+                    transition: all 0.8s ease;
+                }
             }
             .content {
                 background-color: $color-1;
@@ -828,6 +887,11 @@
             }
             &.three {
                 margin-top: 5px;
+            }
+            &:hover {
+                .icon img {
+                    transform: rotateY(180deg);
+                }
             }
         }
     }
@@ -1125,36 +1189,34 @@
 
     }
     .box-testi {
-        padding: 131px 97px 120px 307px;
+        padding: 131px 97px 122px 307px;
         width: 50%;
         background: url(./../../assets/images/section/bg-testimonials-1.png) center no-repeat;
         flex: none;
         .heading-section2 {
             margin-bottom: 40px;
+            padding-right: 70px;
             h6 {
                 margin-bottom: 22px;
             }
         }
-        .box-inner {
-          
+        .box-inner {         
             .inner {
                 padding: 33px 50px;
                 background: $color-1;
                 border-radius: 12px;
                 margin-bottom: 50px;
                 position: relative;
+                box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
                 &::after {
                     content: "";
                     position: absolute;
-                    top: 50%;
                     width: 0;
                     height: 0;
-                    border: 20px solid transparent;
-                    border-bottom: 0;
-                    margin-top: -10px;
-                    background: $bg-color;
+                    border: 40px solid transparent;
+                    border-top: 0;
                     bottom: 0;
-                    margin-right: -20px;
+                    margin-bottom: -33px;
                 }
                 h6 {
                     margin-bottom: 12px;
@@ -1162,8 +1224,29 @@
                 p {
                     line-height: 26.4px;
                 }
+                &.inner-bottom::after {
+                    left: 87px;
+                    border-right-color: $color-1;
+                    border-left: 0;
+                }
             }
-          
+            .author-box {
+                margin-left: 85px;
+                .image {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 15px;
+                }
+                .content {
+                    margin-top: 4px;
+                    h4 {
+                        margin-bottom: 1px;
+                    }              
+                }
+            }       
+        }
+        .pagi2 .swiper-pagination2 {
+            margin-top: 64px;
         }
     }
     .box-images {
@@ -1183,8 +1266,50 @@
         .image2 {
             margin-left: 139px;
         }
-        .inner {
+    }
+}
 
+.flat-news {
+    background: url(./../../assets/images/mark/mark-blog.png) center no-repeat;
+    .heading-section2 {
+        padding: 0 300px;
+        margin-bottom: 51px;
+    }
+    .box {
+        @include transition3;
+        .images img {
+            border-radius: 12px;
+        }
+        .content {
+            padding: 23px 20px 30px 30px;
+            @include transition3;
+            .days {
+                margin-bottom: 5px;
+                color: $color-9;
+            }
+            h3 {
+                letter-spacing: -0.7px;
+                margin-bottom: 13px;
+            }
+            .meta .btn-button {
+                &:hover {
+                    color: $color-7;
+                    span::before {
+                        background: $color-7;
+                    }
+                    path {
+                        fill: $color-7;
+                    }
+                }
+            }
+        }
+        &:hover {
+            background-color: $color-1;
+            border-radius: 12px;
+            .content {
+                box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
+            }
+         
         }
     }
 }

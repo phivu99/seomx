@@ -102,13 +102,13 @@
 
 // slider home 02
 .swiper-button-next3 {
-    right: 16.4%; 
+    right: 15px; 
     left : auto; 
 }
 
 .swiper-button-prev3 {
     right: auto; 
-    left : 16.4%; 
+    left : 15px; 
 }
 
 .swiper-button-next3,
@@ -122,12 +122,12 @@
     opacity: 1;
     @include transition3;
     background: $color-1;
-    color: $color-3;
+    color: $color-7;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
     @include flex-center;
     &:hover,
     &.swiper-button-disabled {
-        background: $color-3;
+        background: $color-7;
         color: $color-1;
         opacity: 1;
     }
