@@ -148,6 +148,10 @@ header {
     }
 }
 
+.wapper-home2 {
+    background-color: #FFF3E6;
+}
+
 /* Site Logo
 -------------------------------------------------------------- */
 #site-logo {
@@ -855,7 +859,7 @@ header {
 .side-menu__top.justify-content-end a {
     min-height: 50px;
     min-width: 50px;
-    background-color: #b250fe;
+    background-color: $color-3;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

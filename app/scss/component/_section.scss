@@ -201,8 +201,6 @@
                 margin-bottom: 22px;
                 font-weight: 500;
             }
-          
-
         }  
     }
 }
@@ -357,11 +355,8 @@
                         background: $color-7;
                     }
                 }
-            }
-            
-            
-    }
-    
+            }  
+    } 
 }
 
   
@@ -683,22 +678,21 @@
 .post-video {
     a {
         position: relative;
-        width: 76px;
-        height: 76px;
+        width: 50px;
+        height: 50px;
         background: $color-1;
         border-radius: 50%;
         text-align: center;
         @include flex-center;
         padding-left: 5px;
-        i {
-            font-size: 25px;
-            color: $color-6;
+        border: 1px solid $color-2;
+        svg {
             @include transition3;
         }
         &:hover {
-            background: $color-3;
-            i {
-                color: $color-1;
+            background: $color-2;
+            svg {
+                fill: $color-1;
             }
         }
     }
@@ -709,8 +703,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 76px;
-    height: 76px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     -ms-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -718,9 +712,9 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     transform: translate(-50%, -50%);
-    -ms-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.04);
-    -o-box-shadow: 0 0px 0 0px rgba(255, 255, 255, 0.04);
-    box-shadow: 0px 0px 0px 30px rgb(255 255 255 / 10%);
+    -ms-box-shadow: 0 0 0 0px rgba(139, 84, 255, 0.04);
+    -o-box-shadow: 0 0px 0 0px rgba(139, 84, 255, 0.04);
+    box-shadow: 0px 0px 0px 10px rgb(139 84 255 / 30%);
     -webkit-animation: ripple 2s infinite;
     animation: ripple 2s infinite;
 }
@@ -1235,10 +1229,6 @@
 }
 
 .flat-testimonials {
-
-    .wrap-testi {
-
-    }
     .box-testi {
         padding: 131px 97px 122px 307px;
         width: 50%;
@@ -1305,11 +1295,28 @@
         padding: 110px 0px 120px 214px;
         background: url(./../../assets/images/section/bg-testimonials-2.png) center no-repeat;
         .images {
-            width: 110px;
+            width: 110px; 
             height: 200px;
             border-radius: 55px;
             margin-right: 30px;
             margin-bottom: -10px;
+            @include transition3;
+            position: relative;
+            overflow: hidden;
+            &::before {
+                @include transition3;
+            }
+            &:hover {
+                &::before {
+                    border: 5px solid #fff;
+                    border-radius: 55px;
+                    position: absolute;
+                    width: 100%;
+                    content: "";
+                    height: 100%;
+                    z-index: 99;
+                }
+            }
             &.style {
                 margin-top: 40px;
             }
@@ -1362,5 +1369,60 @@
             }
          
         }
+    }
+}
+
+.flat-count {
+    background: $color-2;
+    color: $color-1;
+    padding: 80px 0 90px;
+    .wrap-count {
+        margin-left: -30px;
+        .box {
+            width: calc(33.333% - 30px);
+            margin-left: 30px;
+        }
+    }
+    .themes-count {
+        margin-left: -60px;
+        border-radius: 12px;
+    }
+    .counter-box {
+        position      : relative;
+        background-color: $color-3;
+        width: calc(33.333% - 60px);
+        margin-left: 60px;
+        margin-right: 10px;
+        padding: 30px;
+        box-shadow: 9px 9px 0 $color-6;
+        .icon {
+            margin-right: 31px;
+            width: 140px;
+            height: 160px;
+            @include flex-center;
+            border: 1px solid $color-1;
+            border-radius: 12px;
+            background: #9664FF;
+        }
+        .number {
+            font-size    : 100px;
+            font-weight  : 600;
+            // margin-bottom: 12px;
+            margin-bottom: 42px;
+            color: $color-1;
+        
+            &.number-style {
+                &::after {
+                    content: "k";
+                    font-size: 100px;
+                    color: $color-1;
+                    font-family: $font-1;
+                }
+            }
+        } 
+        .content {
+            padding-top: 26px;
+        }
+              
     }
 }

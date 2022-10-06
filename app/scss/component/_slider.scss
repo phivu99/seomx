@@ -127,13 +127,25 @@
     @include flex-center;
     &:hover,
     &.swiper-button-disabled {
-        background: $color-7;
+        background: $color-7 ;
         color: $color-1;
         opacity: 1;
     }
     i {
         font-size: 24px;
         font-weight: 500;
+    }
+}
+
+.sld-style {
+    .swiper-button-next3,
+    .swiper-button-prev3 {
+        color: $color-3;
+        &:hover,
+        &.swiper-button-disabled {
+            background: $color-3;
+            color: $color-1;
+        }
     }
 }
 
@@ -232,21 +244,89 @@
     }
     &.home2 {
         .slider-item {
-            padding: 144px 0 144px;
-            background: #f3f6f0;
+            position: relative;
+            padding: 284px 0 176px;
+            color: #00234B;
+            .content {
+                width: 43%;
+                .sub-title {
+                    box-shadow: 5px 5px 0 $color-2;
+                    margin-bottom: 25px;
+                }
+                .heading {
+                    margin-bottom: 39px;
+                }
+                h1 {
+                    font-size: 70px;
+                    line-height: 84px;
+                    letter-spacing: -2.1px;
+                    margin-bottom: 25px;
+                    span {
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 4px;
+                            width: 100%;
+                            bottom: 5px;
+                            left: 0;
+                            background: $color-2;
+                        }
+                    }
+                }
+                .sc-btn-top {
+                    margin-right: 21px;
+                }
+                .post-video {
+                    margin-top: 2px;
+                    a {
+                        margin-right: 9px;
+                    }
+                }
+            }
             .images {
                 .image {
                     position: absolute;
                     width: 100%;
-                    margin-left: -70px;
-                    margin-top: 5px;
+                    margin-left: 138px;
+                    margin-top: -53px;
                 }
-                .mark-sl {
+                .mark-sub-title {
                     position: absolute;
-                    margin-top: 90px;
-                    margin-left: 34px;
+                    margin-left: 69px;
+                    margin-top: 138px;
+                    .sub-title {
+                        padding: 10px 20px;
+                        display: inline-block;
+                        background: $color-1;
+                        border-radius: 5px;
+                        box-shadow: 3px 3px 0 #120a21;
+                        color: $color-2;
+                    }
+                }
+                .mark-title {
+                    position: absolute;
+                    padding: 55px;
+                    bottom: 13px;
+                    margin-left: 82px;
+                    background: url(./../../assets/images/slider/mark-title.png) center no-repeat;
+                    h5 {
+                        transform: rotate(-20deg);
+                        line-height: 25.2px;
+                        text-align: center;
+                    }
+                }
+                .mark-map {
+                    top: -165px;
+                    margin-left: 90px;
+                    width: 100%;
+                    z-index: -1;
                 }
             }
+            
+        }
+        .swiper-pagination2 {
+            bottom: 10.2%;
         }
     }
     &.home3 {
