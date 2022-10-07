@@ -218,6 +218,12 @@ p {
   letter-spacing: -0.15px;
 }
 
+.p-18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 33.3px;
+}
+
 /* Typography
 -------------------------------------------------------------- */
 h1,
@@ -981,11 +987,10 @@ a:focus, a:hover {
 }
 .heading-section h6 {
   margin-bottom: 26px;
-  margin-left: 1px;
   color: #fff;
   padding: 10px 20px;
   display: inline-block;
-  background: #5C28CA;
+  background: #8B54FF;
   border-radius: 5px;
   box-shadow: 5px 5px 0 #120A21;
 }

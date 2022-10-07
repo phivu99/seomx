@@ -90,19 +90,21 @@
 
 // hover overlay
 .box-hv {
+    &.hover-style2,
     .hover-style {
         position: relative;
         &::before {
             content: '';
             @include absolute;
-            background: rgba(0,0,0,0.1);
+            // background: rgba(0,0,0,0.1);
+            background: $color-3;
             width: 100%;
             height: 100%;
             @include transition3;
-            z-index: 1;
-            transform: scale(1, 0 );
-            transform-origin: top bottom;
-            transition: transform 500ms ease;
+            // z-index: 1;
+            transform: scale(1, 0 ) rotate(-15deg);
+            transform-origin: top left;
+            transition: transform 400ms ease;
         }
         &.hv-2::before {
             background: rgb(86,169,24,0.95);
@@ -111,10 +113,14 @@
             transform: scale(0, 0);
         }
     }  
-    &:hover .hover-style::before {
-        transform: scale(1, 1);
-        transform-origin: center;
-    } 
+    &:hover {
+        &.hover-style2::before,
+        .hover-style::before {
+            transform: scale(1, 1) rotate(0deg);
+            // @include transition3;
+            // transform-origin:right;
+        } 
+    }
 }
 
 

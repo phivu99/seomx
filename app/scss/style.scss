@@ -227,6 +227,12 @@ p {
     letter-spacing: -0.15px;
 }
 
+.p-18 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33.3px;
+}
+
 /* Typography
 -------------------------------------------------------------- */
 
@@ -410,8 +416,6 @@ button {
     cursor: pointer;
 }
 
-
-
 .font {
     font-family: 'Outfit', sans-serif;
 }
@@ -435,6 +439,7 @@ button {
 .fw-7 {
     font-weight: 700
 }
+
 
 .lh-26 {
     line-height: 26px
@@ -944,12 +949,11 @@ a {
     margin-bottom: 52px;
     h6 {
         margin-bottom: 26px;
-        margin-left: 1px;
         // text-transform: uppercase;
         color: $color-1;
         padding: 10px 20px;
         display: inline-block;
-        background: #5C28CA;
+        background: $color-3;
         border-radius: 5px;
         box-shadow: 5px 5px 0 $color-2;
     }

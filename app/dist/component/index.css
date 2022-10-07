@@ -1168,6 +1168,11 @@ path.two {
   width: 100%;
   bottom: 5px;
   background: #120A21;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .meta .comment {
   font-size: 18px;
@@ -2343,6 +2348,175 @@ path.two {
   padding-top: 26px;
 }
 
+.flat-about2 {
+  padding: 175px 0 176px;
+}
+.flat-about2 .box-images {
+  padding-left: 31px;
+}
+.flat-about2 .heading-section {
+  margin-bottom: 0;
+  padding-top: 33px;
+  padding-left: 1px;
+}
+.flat-about2 .heading-section h6 {
+  margin-bottom: 29px;
+}
+.flat-about2 .heading-section h2 {
+  line-height: 46.2px;
+  margin-bottom: 33px;
+}
+.flat-about2 .heading-section p {
+  margin-bottom: 38px;
+}
+
+.flat-service2 {
+  background: #fff;
+  padding: 80px 0 88px;
+  margin: 0 227px 0px;
+  box-shadow: 10px 10px 0 #120A21;
+}
+.flat-service2 .heading-section {
+  padding: 0 230px;
+  margin-bottom: 50px;
+}
+.flat-service2 .heading-section h2 {
+  letter-spacing: -1.2px;
+  text-transform: unset;
+}
+.flat-service2 .inner {
+  background: rgba(139, 84, 255, 0.07);
+  padding: 39px 30px 34px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service2 .inner .icon {
+  width: 75px;
+  height: 75px;
+  background-color: #8B54FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: inline-flex;
+  box-shadow: 3px 5px 0 #120A21;
+  margin-bottom: 35px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.flat-service2 .inner .icon path {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service2 .inner .content {
+  position: relative;
+}
+.flat-service2 .inner .content h4 {
+  letter-spacing: -0.7px;
+  margin-bottom: 14px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service2 .inner .content p {
+  margin-bottom: 22px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service2 .inner .content .meta a {
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service2 .inner:hover {
+  box-shadow: 8px 8px 0 #120A21;
+}
+.flat-service2 .inner:hover .icon {
+  background-color: #fff;
+}
+.flat-service2 .inner:hover .icon path {
+  fill: #8B54FF;
+}
+.flat-service2 .inner:hover .content h4 a {
+  color: #fff;
+}
+.flat-service2 .inner:hover .content p {
+  color: #fff;
+}
+.flat-service2 .inner:hover .content .meta a {
+  color: #fff;
+}
+.flat-service2 .inner:hover .content .meta a span::before {
+  background: #fff;
+}
+.flat-service2 .inner:hover .content .meta a path {
+  fill: #fff;
+}
+
+.flat-latest-works {
+  padding: 139px 62px;
+}
+.flat-latest-works .heading-section {
+  margin-bottom: 50px;
+}
+.flat-latest-works .heading-section h6 {
+  margin-bottom: 25px;
+}
+.flat-latest-works .box {
+  color: #fff;
+  background: #120A21;
+}
+.flat-latest-works .box .images img {
+  width: 100%;
+  margin-left: -10px;
+}
+.flat-latest-works .box .content {
+  padding: 20px;
+}
+.flat-latest-works .box .content h3 {
+  margin-bottom: 8px;
+}
+.flat-latest-works .box .content p {
+  color: #fff;
+}
+.flat-latest-works .swiper-container {
+  padding: 20px;
+  margin: -20px;
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 3px 5px 0 #FFD80D;
+}
+.icon-button i {
+  color: #120A21;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
@@ -2676,9 +2850,11 @@ path.two {
   transition-duration: 1.3s !important;
 }
 
+.box-hv.hover-style2,
 .box-hv .hover-style {
   position: relative;
 }
+.box-hv.hover-style2::before,
 .box-hv .hover-style::before {
   content: "";
   top: 0;
@@ -2686,7 +2862,7 @@ path.two {
   left: 0;
   bottom: 0;
   position: absolute;
-  background: rgba(0, 0, 0, 0.1);
+  background: #8B54FF;
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s ease;
@@ -2694,20 +2870,20 @@ path.two {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 1;
-  transform: scale(1, 0);
-  transform-origin: top bottom;
-  transition: transform 500ms ease;
+  transform: scale(1, 0) rotate(-15deg);
+  transform-origin: top left;
+  transition: transform 400ms ease;
 }
+.box-hv.hover-style2.hv-2::before,
 .box-hv .hover-style.hv-2::before {
   background: rgba(86, 169, 24, 0.95);
   mix-blend-mode: multiply;
   transform-origin: center;
   transform: scale(0, 0);
 }
+.box-hv:hover.hover-style2::before,
 .box-hv:hover .hover-style::before {
-  transform: scale(1, 1);
-  transform-origin: center;
+  transform: scale(1, 1) rotate(0deg);
 }
 
 .swiper-button-next:after,
