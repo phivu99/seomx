@@ -106,6 +106,7 @@
             $(this).closest('.flat-toggle').find('.toggle-content').slideToggle(args);
             $(this).toggleClass('active');
         });
+
         $('.flat-accordion .toggle-title').on('click', function () {
             if (!$(this).is('.active')) {
                 $(this).closest('.flat-accordion').find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
@@ -116,6 +117,25 @@
                 $(this).next().slideToggle(args);
             }
         });
+
+        $('.flat-accordion .flat-toggle').on('click', function () {
+            if (!$(this).is('.activ')) {
+                $(this).find('.flat-toggle.activ').toggleClass('activ').next();
+                $(this).toggleClass('activ');
+            } else {
+                $(this).toggleClass('activ');
+   
+            }
+        });
+       
+        // $('.flat-toggle').on('click', function () {
+        //     if (!$(this).is('.active')) {
+        //         $(this).find('.flat-toggle.active').toggleClass('active').next().slideToggle(args);
+        //         $(this).toggleClass('active');
+        //     } else {
+        //         $(this).toggleClass('active');
+        //     }
+        // });
     };
 
     var buttonHeart = function () { 
