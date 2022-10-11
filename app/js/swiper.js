@@ -190,41 +190,8 @@ var swiper =  new Swiper(".carousel-5", {
     },
 });
 
-var swiper =  new Swiper(".carousel-6,.carousel-15,.carousel-16,.carousel-17,.carousel-18", {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    loop:false,
-    slidesPerView: 1,
-    slidesPerColumn: 2,
-    slidesPerColumnFill: 'row',
-    spaceBetween: 20,
-    navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        576: {
-            slidesPerView: 2,
-            slidesPerColumn: 2,
-            spaceBetween: 30,
-        },
-        992: {
-            slidesPerView: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 20,
-        },
-        1200: {
-            slidesPerView: 5,
-            slidesPerColumn: 2,
-            spaceBetween: 20,
-        },
-    },
-});
 
-var swiper =  new Swiper(".carousel-7", {
+var swiper =  new Swiper(".carousel-6", {
     // autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,
@@ -240,25 +207,19 @@ var swiper =  new Swiper(".carousel-7", {
         prevEl: ".swiper-button-prev4",
     },
     breakpoints: {
-        700: {
+        768: {
             slidesPerView: 2,
             slidesPerColumn: 2,
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 1,
-            slidesPerColumn: 3,
-            spaceBetween: 20,
-        },
-        1200: {
-            slidesPerView: 1,
-            slidesPerColumn: 3,
-            spaceBetween: 20,
+            slidesPerView: 3,
+            spaceBetween: 30,
         },
     },
 });
 
-var swiper =  new Swiper(".carousel-8", {
+var swiper =  new Swiper(".carousel-7", {
     // autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,
@@ -272,7 +233,7 @@ var swiper =  new Swiper(".carousel-8", {
         prevEl: ".swiper-button-prev4",
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination3",
         clickable: true,
     },
     breakpoints: {
@@ -281,7 +242,7 @@ var swiper =  new Swiper(".carousel-8", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30,
         },
     },

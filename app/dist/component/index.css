@@ -2698,6 +2698,171 @@ path.two {
   line-height: 33px;
 }
 
+.flat-testimonials2 {
+  background: #120A21;
+  color: #fff;
+  padding: 107px 0 100px;
+  margin: 0 226px 0px 227px;
+  box-shadow: 10px 10px 0 #FFD80D;
+}
+.flat-testimonials2 .box-images {
+  padding-top: 65px;
+}
+.flat-testimonials2 .box-images .images {
+  margin-right: -10px;
+  z-index: 3;
+}
+.flat-testimonials2 .box-images .mark-img {
+  top: 36px;
+  right: -21px;
+}
+.flat-testimonials2 .wrap-testi {
+  padding-left: 68px;
+  flex-wrap: wrap;
+}
+.flat-testimonials2 .wrap-testi .mark-img2 {
+  top: -58px;
+  right: 23.7%;
+  animation: swing ease-in-out 1s infinite alternate;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+.flat-testimonials2 .box .inner {
+  padding: 22px 35px 21px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-testimonials2 .box .inner::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  bottom: 0;
+  margin-bottom: -33px;
+}
+.flat-testimonials2 .box .inner.inner-bottom::after {
+  left: 87px;
+  border-right-color: #fff;
+  border-left: 0;
+}
+.flat-testimonials2 .box .author-box {
+  margin-left: 85px;
+}
+.flat-testimonials2 .box .author-box .image {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  width: 65px;
+  height: 65px;
+}
+.flat-testimonials2 .box .author-box .content {
+  margin-top: 6px;
+}
+.flat-testimonials2 .box .author-box .content h4 {
+  margin-bottom: 1px;
+}
+.flat-testimonials2 .box.box-1 {
+  width: 48.8%;
+  padding-right: 50px;
+}
+.flat-testimonials2 .box.box-2 {
+  width: 51.2%;
+  margin-top: 31px;
+}
+.flat-testimonials2 .box.box-2 .inner.inner-bottom::after {
+  left: 66px;
+}
+.flat-testimonials2 .box.box-2 .author-box {
+  margin-left: 64px;
+}
+.flat-testimonials2 .box.box-3 {
+  margin: 49px 242px 0 129px;
+}
+.flat-testimonials2 .box.active .inner, .flat-testimonials2 .box:hover .inner {
+  box-shadow: -7px -7px 0 #8B54FF;
+}
+
+.flat-news2 {
+  padding: 140px 0 130px;
+}
+.flat-news2 .heading-section {
+  margin-bottom: 50px;
+}
+.flat-news2 .heading-section h2 {
+  letter-spacing: -1.2px;
+}
+.flat-news2 .box {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 35px 45px 45px 40px;
+}
+.flat-news2 .box .images {
+  flex: none;
+  box-shadow: 5px 5px 0 #8B54FF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-news2 .box .content {
+  padding: 34px 30px 30px 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-news2 .box .content .days {
+  margin-bottom: 9px;
+  color: #5C28CA;
+}
+.flat-news2 .box .content .days::before {
+  content: "\f272";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+.flat-news2 .box .content h4 {
+  letter-spacing: -0.4px;
+  margin-bottom: 23px;
+}
+.flat-news2 .box:hover {
+  box-shadow: 7px 7px 0 #8B54FF;
+}
+.flat-news2 .box:hover .images {
+  box-shadow: 5px 5px 0 #FFD80D;
+}
+.flat-news2 .swiper-container {
+  padding: 10px 10px 131px;
+  margin: -10px -10px -131px;
+}
+.flat-news2 .pagi3 .inner-pagi {
+  bottom: unset;
+  right: unset;
+  top: unset;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
@@ -2722,6 +2887,9 @@ path.two {
 }
 #footer.home .icon-social a i:hover {
   background: #F43FE2;
+}
+#footer.home2 {
+  background: #FFF3E6;
 }
 
 /* Widget
@@ -3641,6 +3809,13 @@ path.two {
   top: 1px;
   right: 15.3%;
   border: 1px solid #120A21;
+}
+.pagi3 .inner-pagi2 {
+  background: #fff;
+  display: inline-block;
+  padding: 21.5px 22px;
+  border: 1px solid #120A21;
+  margin-top: 60px;
 }
 .pagi3 .swiper-pagination3 {
   position: relative;

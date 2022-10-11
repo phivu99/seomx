@@ -1734,12 +1734,160 @@
                 p {
                     line-height: 33px;
                 }
-
-                // p {
-                //     font-size: 18px;
-                //     line-height: 28px;                
-                // }
             }
         }
+    }
+}
+
+.flat-testimonials2 {
+    background: $color-2;
+    color: $color-1;
+    padding: 107px 0 100px;
+    margin: 0 226px 0px 227px;
+    box-shadow: 10px 10px 0 $color-6;
+    .box-images {
+        padding-top: 65px;
+        .images {
+            margin-right: -10px;
+            z-index: 3;
+        }
+        .mark-img {
+            top: 36px;
+            right: -21px;
+        }
+    }
+    .wrap-testi {
+        padding-left: 68px;
+        flex-wrap: wrap;
+        .mark-img2 {
+            top: -58px;
+            right: 23.7%;
+            animation: swing ease-in-out 1s infinite alternate;
+            @keyframes swing {
+                0% { transform: rotate(5deg); }
+                100% { transform: rotate(-5deg); }
+            }
+        }
+    }
+    .box {         
+        .inner {
+            padding: 22px 35px 21px;
+            background: $color-1;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            position: relative;
+            @include transition3;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 40px solid transparent;
+                border-top: 0;
+                bottom: 0;
+                margin-bottom: -33px;
+            }
+            &.inner-bottom::after {
+                left: 87px;
+                border-right-color: $color-1;
+                border-left: 0;
+            }          
+        }
+        .author-box {
+            margin-left: 85px;
+            .image {
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 15px;
+                width: 65px;
+                height: 65px;
+            }
+            .content {
+                margin-top: 6px;
+                h4 {
+                    margin-bottom: 1px;
+                }              
+            }
+        }  
+        &.box-1 {
+            width: 48.8%;
+            padding-right: 50px;
+        }   
+        &.box-2 {
+            width: 51.2%;
+            margin-top: 31px;
+            .inner.inner-bottom::after {
+                left: 66px;
+            }
+            .author-box {
+                margin-left: 64px;
+            }
+        }
+        &.box-3 {
+            margin: 49px 242px 0 129px;
+        }
+        &.active .inner,
+        &:hover .inner{
+            box-shadow: -7px -7px 0 $color-3;
+        }
+    }
+}
+
+.flat-news2 {
+    padding: 140px 0 130px;
+    .heading-section {
+        margin-bottom: 50px;
+        h2 {
+            letter-spacing: -1.2px
+        }
+    }
+    .box {
+        @include transition3;
+        background: $color-1;
+        padding: 35px 45px 45px 40px;
+   
+        .images {
+            flex: none;
+            box-shadow: 5px 5px 0 $color-3;
+            @include transition3;
+            
+        }
+        .content {
+            padding: 34px 30px 30px 0px;
+            @include transition3;
+            .days {
+                margin-bottom: 9px; 
+                color: $color-9;
+                &::before {
+                    content: "\f272";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 16px;
+                    margin-right: 10px;
+                    font-weight: 300;
+                }
+            }
+            h4 {
+                letter-spacing: -0.4px;
+                margin-bottom: 23px;
+            }
+        }
+        &:hover {
+            box-shadow: 7px 7px 0 $color-3;
+            .images {
+                box-shadow: 5px 5px 0 $color-6;
+            }
+        }
+    }
+    .swiper-container {
+        padding: 10px 10px 131px;
+        margin: -10px -10px -131px;
+    }
+    .pagi3 .inner-pagi {
+        // bottom: 0;
+        // right: 38.5%;
+        bottom: unset;
+        right: unset;
+        top: unset;
+        // transform: translateX(-50%);
     }
 }
