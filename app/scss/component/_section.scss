@@ -1430,6 +1430,22 @@
 
 .flat-about2 {
     padding: 175px 0 176px;
+    position: relative;
+    .mark-img {
+        .mark-1 {
+            left: 7.4%;
+            top: 17.1%;
+        }
+        .mark-2 {
+            right: 9%;
+            top: 15.1%;
+        }
+        .mark-3 {
+            right: 4.9%;
+            bottom: 36.7%;
+        }
+    }
+
     .box-images {
         padding-left: 31px;
     }
@@ -1455,6 +1471,16 @@
     padding: 80px 0 88px;
     margin: 0 227px 0px;
     box-shadow: 10px 10px 0 $color-2;
+    .mark-img {
+        .mark-1 {
+            left: 42px;
+            top: 23px;
+        }
+        .mark-2 {
+            right: 32px;
+            top: 17px;
+        }
+    }
     .heading-section {
         padding: 0 230px;
         margin-bottom: 50px;
@@ -1580,6 +1606,7 @@
     border-radius: 50%;
     box-shadow: 5px 5px 0 $color-6;
     @include flex-center;
+    flex: none;
     i {
         color: $color-2;
         font-size: 18px;
@@ -1653,7 +1680,8 @@
     .slogan-logo {
         a {
             background: $color-1;
-            padding: 30px 49px 30px 51px;
+            // padding: 30px 49px 30px 51px;
+            padding: 20px 15px 20px;
             border-radius: 12px;
             height: 104px; 
             @include flex-center;
@@ -1743,7 +1771,7 @@
     background: $color-2;
     color: $color-1;
     padding: 107px 0 100px;
-    margin: 0 226px 0px 227px;
+    margin: 0 226px 10px 227px;
     box-shadow: 10px 10px 0 $color-6;
     .box-images {
         padding-top: 65px;
@@ -1762,8 +1790,8 @@
         .mark-img2 {
             top: -58px;
             right: 23.7%;
-            animation: swing ease-in-out 1s infinite alternate;
-            @keyframes swing {
+            animation: swing2 ease-in-out 1s infinite alternate;
+            @keyframes swing2 {
                 0% { transform: rotate(5deg); }
                 100% { transform: rotate(-5deg); }
             }
@@ -1801,7 +1829,8 @@
                 margin-right: 15px;
                 width: 65px;
                 height: 65px;
-            }
+                flex: none;
+            } 
             .content {
                 margin-top: 6px;
                 h4 {
@@ -1834,7 +1863,35 @@
 }
 
 .flat-news2 {
-    padding: 140px 0 130px;
+    .mark-img {
+        .mark-1 {
+            left: 5.1%;
+            top: 16%;
+        }
+        .mark-2 {
+            right: 8%;
+            top: 14.1%;
+        }
+        .mark-3 {
+            left: 7.5%;
+            bottom: 21.7%;
+            animation: swing ease-in-out 2s infinite alternate;
+            @keyframes swing {
+                0% { transform: rotate(15deg); }
+                100% { transform: rotate(-15deg); }
+            }
+        }
+        .mark-4 {
+            right: 7.6%;
+            bottom: 24.5%;
+            animation: swing ease-in-out 2s infinite alternate;
+            @keyframes swing {
+                0% { transform: rotate(25deg); }
+                100% { transform: rotate(-25deg); }
+            }
+        }    
+       
+    }
     .heading-section {
         margin-bottom: 50px;
         h2 {
@@ -1881,13 +1938,5 @@
     .swiper-container {
         padding: 10px 10px 131px;
         margin: -10px -10px -131px;
-    }
-    .pagi3 .inner-pagi {
-        // bottom: 0;
-        // right: 38.5%;
-        bottom: unset;
-        right: unset;
-        top: unset;
-        // transform: translateX(-50%);
     }
 }
