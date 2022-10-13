@@ -179,12 +179,16 @@ var swiper =  new Swiper(".carousel-5", {
         clickable: true,
     },
     breakpoints: {
-        768: {
+        450: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
-        992: {
+        768: {
             slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 4,
             spaceBetween: 30,
         },
         1200: {

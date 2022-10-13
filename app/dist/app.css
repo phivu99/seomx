@@ -2316,13 +2316,6 @@ path.two {
   color: #fff;
   padding: 80px 0 90px;
 }
-.flat-count .wrap-count {
-  margin-left: -30px;
-}
-.flat-count .wrap-count .box {
-  width: calc(33.333% - 30px);
-  margin-left: 30px;
-}
 .flat-count .themes-count {
   margin-left: -60px;
   border-radius: 12px;
@@ -2363,6 +2356,46 @@ path.two {
   padding-top: 26px;
 }
 
+.flat-count2 {
+  background: #120A21;
+  color: #fff;
+  padding: 80px 0 90px;
+}
+.flat-count2 .themes-count {
+  margin-left: -60px;
+  border-radius: 12px;
+}
+.flat-count2 .counter-box {
+  position: relative;
+  background-color: #8B54FF;
+  width: calc(25% - 60px);
+  margin-left: 60px;
+  margin-right: 10px;
+  padding: 11px 19px 20px 29px;
+  box-shadow: 9px 9px 0 #FFD80D;
+}
+.flat-count2 .counter-box .icon {
+  margin-right: 21px;
+}
+.flat-count2 .counter-box .number {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.flat-count2 .counter-box .number.number-style::after {
+  content: "k";
+  font-size: 42px;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+.flat-count2 .counter-box .title-count {
+  font-size: 16px;
+}
+.flat-count2 .counter-box .content {
+  padding-top: 9px;
+}
+
 .flat-about2 {
   padding: 175px 0 176px;
   position: relative;
@@ -2370,6 +2403,7 @@ path.two {
 .flat-about2 .mark-img .mark-1 {
   left: 7.4%;
   top: 17.1%;
+  z-index: 1;
 }
 .flat-about2 .mark-img .mark-2 {
   right: 9%;
@@ -2885,6 +2919,8 @@ path.two {
 }
 .flat-news2 .box .images {
   flex: none;
+}
+.flat-news2 .box .images img {
   box-shadow: 5px 5px 0 #8B54FF;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2893,7 +2929,7 @@ path.two {
   transition: all 0.3s ease;
 }
 .flat-news2 .box .content {
-  padding: 34px 30px 30px 0px;
+  padding: 34px 30px 0px 0px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -2918,7 +2954,7 @@ path.two {
 .flat-news2 .box:hover {
   box-shadow: 7px 7px 0 #8B54FF;
 }
-.flat-news2 .box:hover .images {
+.flat-news2 .box:hover .images img {
   box-shadow: 5px 5px 0 #FFD80D;
 }
 .flat-news2 .swiper-container {
@@ -3066,6 +3102,7 @@ path.two {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: none;
   margin-right: 16.5px;
   box-shadow: 2px 5px 0 #120A21;
 }
