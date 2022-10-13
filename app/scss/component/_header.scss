@@ -152,6 +152,12 @@ header {
     background-color: #FFF3E6;
 }
 
+.is_light {
+    .wapper-home2 {
+        background-color: $color-1;
+    }
+}
+
 /* Site Logo
 -------------------------------------------------------------- */
 #site-logo {
@@ -230,6 +236,16 @@ header {
         box-shadow: unset;
         background: $color-7;
     }    
+}
+
+.mode-switch {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: var(--primary-color6);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 /* Menu
