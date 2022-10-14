@@ -1005,6 +1005,17 @@ a:focus, a:hover {
   background: #fff;
   color: #120A21;
 }
+.heading-section.style3 {
+  margin-bottom: 50px;
+}
+.heading-section.style3 h6 {
+  margin-bottom: 25px;
+}
+.heading-section.style3 h2 {
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  line-height: 50.4px;
+}
 
 .heading-section2 {
   margin-bottom: 50px;
@@ -1161,6 +1172,39 @@ a:focus, a:hover {
   margin-bottom: 0px;
   cursor: pointer;
   opacity: 0;
+}
+
+/* donat progress */
+.progress-bar {
+  margin: 16px 0 46px;
+}
+
+.progress-title-holder {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.progress-content-outter {
+  height: 5px;
+  background-color: rgba(8, 4, 34, 0.1);
+  border-radius: 5px;
+}
+
+.progress-content {
+  height: 5px;
+  background-color: #8B54FF;
+  width: 0%;
+}
+
+.progress-number-mark {
+  margin-bottom: 4px;
+  position: relative;
+  top: 1px;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

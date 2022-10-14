@@ -1431,7 +1431,7 @@
 .flat-count2 {
     background: $color-2;
     color: $color-1;
-    padding: 80px 0 90px;
+    padding: 80px 0 85px;
     .themes-count {
         margin-left: -60px;
         border-radius: 12px;
@@ -1442,18 +1442,16 @@
         width: calc(25% - 60px);
         margin-left: 60px;
         margin-right: 10px;
-        padding: 11px 19px 20px 29px;
-        box-shadow: 9px 9px 0 $color-6;
+        padding: 21px 19px 22px 30px;
+        box-shadow: 7px 7px 0 $color-6;
         .icon {
-            margin-right: 21px;
+            margin-right: 16px;
         }
         .number {
             font-size    : 42px;
             font-weight  : 600;
-            // margin-bottom: 12px;
             margin-bottom: 10px;
             color: $color-1;
-        
             &.number-style {
                 &::after {
                     content: "k";
@@ -1467,12 +1465,11 @@
             font-size: 16px;
         }
         .content {
-            padding-top: 9px;
+            padding-top: 8px;
         }
               
     }
 }
-
 
 .flat-about2 {
     padding: 175px 0 176px;
@@ -1605,6 +1602,15 @@
     }
 }
 
+.is_light {
+    .flat-service2 {
+        background: $bg-color;
+        .inner {
+            background: $color-1;
+        }
+    }
+}
+
 .flat-latest-works {
     padding: 139px 72px 0px 72px;
     .heading-section {
@@ -1644,6 +1650,7 @@
         margin: -137px -50px -50px;
     }
 }
+
 .icon-button {
     margin-top: -2px;
     width: 50px;
@@ -1670,6 +1677,7 @@
             width: 436px;            
             background-color: $color-1;
             margin-bottom: 40px;
+            @include transition3;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -1704,10 +1712,12 @@
             @include flex-center;
             margin-bottom: 17px;
             box-shadow: 3px 5px 0 $color-2;
+            @include transition3;
         }
         .title {
             line-height: 39px;
             letter-spacing: -0.9px;
+            @include transition3;
         }
     }
     .box-images {
@@ -1715,6 +1725,32 @@
             position: absolute;
             top: 13px;
             right: -76px;
+        }
+    }
+}
+
+.is_light {
+    .flat-step {
+        .box-step {
+            .step {
+                background-color: $bg-color;
+                &.step-3 .number {
+                    background-color: $color-3;
+                    box-shadow: 3px 5px 0 $color-2;
+                
+                }
+                &.active,
+                &:hover {
+                    background-color: $color-3;
+                    .number {
+                        background-color: $color-6;
+                        color: $color-2 !important;
+                    }
+                    a {
+                        color: $color-1;
+                    }
+                }
+            }
         }
     }
 }
@@ -1779,7 +1815,6 @@
                     }
                 } 
             }
-
             .btn-toggle {
                 position: absolute;
                 right: 30px;
@@ -1798,8 +1833,7 @@
                     background-color: $color-6;
                     box-shadow: -5px -5px 0 $color-3;
                 }
-            }
-           
+            }          
             .toggle-content {
                 padding: 24px 110px 24px 23px;
                 display         : none;
@@ -1810,6 +1844,16 @@
                     line-height: 33px;
                 }
             }
+        }
+    }
+}
+
+.is_light .flat-faq {
+    .flat-accordion .flat-toggle {
+        background: $bg-color;
+        .toggle-title,
+        .toggle-content {
+            background: $bg-color;
         }
     }
 }
@@ -1949,7 +1993,6 @@
         @include transition3;
         background: $color-1;
         padding: 35px 45px 45px 40px;
-   
         .images {
             flex: none;
             img {
@@ -1986,5 +2029,88 @@
     .swiper-container {
         padding: 10px 10px 131px;
         margin: -10px -10px -131px;
+    }
+}
+
+.is_light .flat-news2 {
+    .box {
+        background: $bg-color;
+        .content .days {
+            color: $color-2;
+        }
+    }
+    .pagi3 .inner-pagi2 {
+        background: $bg-color;
+    }
+}
+
+.flat-about3 {
+    padding: 130px 0 130px;
+    .box-images {
+        padding-left: 0px;
+        .images {
+            position: absolute;
+            top: 0px;
+            left: -95px;
+        }
+    }
+    .about-box {
+        padding-top: 31px;
+        padding-left: 48px;
+        .heading-section {
+            padding-right: 20px;
+            margin-bottom: 38px;
+        }
+        .icon-box {
+            margin-bottom: 31px;
+            .inner {
+                padding: 20px 20px 20px 40px;
+                .icon {
+                    margin-right: 15px;
+                    img {
+                        @include transition3;
+                    }
+                }
+                h6 {
+                    margin-top: 2px;
+                }
+                &.inner-1 {
+                    box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.12);
+                    width: 51%;
+                }
+                &.inner-2 {
+                    padding: 20px 0px 20px 30px;
+                }
+                &:hover {
+                    .icon img {
+                        transform: rotate(25deg);
+                    }
+                }
+            }
+        }
+        p {
+            margin-bottom: 36px;
+        }
+    }
+}
+
+.flat-skills {
+    // padding: 130px 0 130px;
+    padding-bottom: 150px;
+    position: relative; 
+    .box-images {
+        padding-left: 0px;
+        .images {
+            position: absolute;
+            top: -5px;
+            right: 9px;
+        }
+    }
+    .wrap-skill {
+        padding-top: 56px;
+        padding-right: 83px;
+        .heading-section {
+            padding-right: 30px;
+        }
     }
 }

@@ -213,11 +213,17 @@ header {
 .mode-switch {
   width: 48px;
   height: 48px;
-  line-height: 48px;
-  text-align: center;
-  background-color: var(--primary-color6);
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.is_light .mode-switch {
+  background: #FFF4E7;
 }
 
 /* Menu
@@ -2373,7 +2379,7 @@ path.two {
 .flat-count2 {
   background: #120A21;
   color: #fff;
-  padding: 80px 0 90px;
+  padding: 80px 0 85px;
 }
 .flat-count2 .themes-count {
   margin-left: -60px;
@@ -2385,11 +2391,11 @@ path.two {
   width: calc(25% - 60px);
   margin-left: 60px;
   margin-right: 10px;
-  padding: 11px 19px 20px 29px;
-  box-shadow: 9px 9px 0 #FFD80D;
+  padding: 21px 19px 22px 30px;
+  box-shadow: 7px 7px 0 #FFD80D;
 }
 .flat-count2 .counter-box .icon {
-  margin-right: 21px;
+  margin-right: 16px;
 }
 .flat-count2 .counter-box .number {
   font-size: 42px;
@@ -2407,7 +2413,7 @@ path.two {
   font-size: 16px;
 }
 .flat-count2 .counter-box .content {
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 .flat-about2 {
@@ -2561,6 +2567,13 @@ path.two {
   fill: #fff;
 }
 
+.is_light .flat-service2 {
+  background: #FFF4E7;
+}
+.is_light .flat-service2 .inner {
+  background: #fff;
+}
+
 .flat-latest-works {
   padding: 139px 72px 0px 72px;
 }
@@ -2632,6 +2645,11 @@ path.two {
   width: 436px;
   background-color: #fff;
   margin-bottom: 40px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-step .box-step .step:last-child {
   margin-bottom: 0;
@@ -2668,15 +2686,43 @@ path.two {
   justify-content: center;
   margin-bottom: 17px;
   box-shadow: 3px 5px 0 #120A21;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-step .box-step .title {
   line-height: 39px;
   letter-spacing: -0.9px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-step .box-images .images {
   position: absolute;
   top: 13px;
   right: -76px;
+}
+
+.is_light .flat-step .box-step .step {
+  background-color: #FFF4E7;
+}
+.is_light .flat-step .box-step .step.step-3 .number {
+  background-color: #8B54FF;
+  box-shadow: 3px 5px 0 #120A21;
+}
+.is_light .flat-step .box-step .step.active, .is_light .flat-step .box-step .step:hover {
+  background-color: #8B54FF;
+}
+.is_light .flat-step .box-step .step.active .number, .is_light .flat-step .box-step .step:hover .number {
+  background-color: #FFD80D;
+  color: #120A21 !important;
+}
+.is_light .flat-step .box-step .step.active a, .is_light .flat-step .box-step .step:hover a {
+  color: #fff;
 }
 
 .flat-brand {
@@ -2780,6 +2826,14 @@ path.two {
 }
 .flat-faq .flat-accordion .flat-toggle .toggle-content p {
   line-height: 33px;
+}
+
+.is_light .flat-faq .flat-accordion .flat-toggle {
+  background: #FFF4E7;
+}
+.is_light .flat-faq .flat-accordion .flat-toggle .toggle-title,
+.is_light .flat-faq .flat-accordion .flat-toggle .toggle-content {
+  background: #FFF4E7;
 }
 
 .flat-testimonials2 {
@@ -2976,6 +3030,88 @@ path.two {
   margin: -10px -10px -131px;
 }
 
+.is_light .flat-news2 .box {
+  background: #FFF4E7;
+}
+.is_light .flat-news2 .box .content .days {
+  color: #120A21;
+}
+.is_light .flat-news2 .pagi3 .inner-pagi2 {
+  background: #FFF4E7;
+}
+
+.flat-about3 {
+  padding: 130px 0 130px;
+}
+.flat-about3 .box-images {
+  padding-left: 0px;
+}
+.flat-about3 .box-images .images {
+  position: absolute;
+  top: 0px;
+  left: -95px;
+}
+.flat-about3 .about-box {
+  padding-top: 31px;
+  padding-left: 48px;
+}
+.flat-about3 .about-box .heading-section {
+  padding-right: 20px;
+  margin-bottom: 38px;
+}
+.flat-about3 .about-box .icon-box {
+  margin-bottom: 31px;
+}
+.flat-about3 .about-box .icon-box .inner {
+  padding: 20px 20px 20px 40px;
+}
+.flat-about3 .about-box .icon-box .inner .icon {
+  margin-right: 15px;
+}
+.flat-about3 .about-box .icon-box .inner .icon img {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-about3 .about-box .icon-box .inner h6 {
+  margin-top: 2px;
+}
+.flat-about3 .about-box .icon-box .inner.inner-1 {
+  box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.12);
+  width: 51%;
+}
+.flat-about3 .about-box .icon-box .inner.inner-2 {
+  padding: 20px 0px 20px 30px;
+}
+.flat-about3 .about-box .icon-box .inner:hover .icon img {
+  transform: rotate(25deg);
+}
+.flat-about3 .about-box p {
+  margin-bottom: 36px;
+}
+
+.flat-skills {
+  padding-bottom: 150px;
+  position: relative;
+}
+.flat-skills .box-images {
+  padding-left: 0px;
+}
+.flat-skills .box-images .images {
+  position: absolute;
+  top: -5px;
+  right: 9px;
+}
+.flat-skills .wrap-skill {
+  padding-top: 56px;
+  padding-right: 83px;
+}
+.flat-skills .wrap-skill .heading-section {
+  padding-right: 30px;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
@@ -3003,6 +3139,10 @@ path.two {
 }
 #footer.home2 {
   background: #FFF3E6;
+}
+
+.is_light #footer.home2 {
+  background: #fff;
 }
 
 /* Widget
@@ -5427,6 +5567,17 @@ a:focus, a:hover {
   background: #fff;
   color: #120A21;
 }
+.heading-section.style3 {
+  margin-bottom: 50px;
+}
+.heading-section.style3 h6 {
+  margin-bottom: 25px;
+}
+.heading-section.style3 h2 {
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  line-height: 50.4px;
+}
 
 .heading-section2 {
   margin-bottom: 50px;
@@ -5583,6 +5734,39 @@ a:focus, a:hover {
   margin-bottom: 0px;
   cursor: pointer;
   opacity: 0;
+}
+
+/* donat progress */
+.progress-bar {
+  margin: 16px 0 46px;
+}
+
+.progress-title-holder {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.progress-content-outter {
+  height: 5px;
+  background-color: rgba(8, 4, 34, 0.1);
+  border-radius: 5px;
+}
+
+.progress-content {
+  height: 5px;
+  background-color: #8B54FF;
+  width: 0%;
+}
+
+.progress-number-mark {
+  margin-bottom: 4px;
+  position: relative;
+  top: 1px;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=app.css.map */
