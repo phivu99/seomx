@@ -1305,6 +1305,38 @@ path.two {
   background: #F43FE2;
 }
 
+.flat-subscribe.page {
+  padding: 80px 0 100px 10px;
+}
+.flat-subscribe.page .wrap-subscribe {
+  padding: 20px 75px 0 0px;
+}
+.flat-subscribe.page .flat-testimonials {
+  margin-top: 20px;
+}
+.flat-subscribe.page .flat-testimonials .box-inner .inner {
+  padding: 30px 40px 31px;
+}
+.flat-subscribe.page .flat-testimonials .box-inner .inner p {
+  line-height: 30px;
+}
+.flat-subscribe.page .flat-testimonials .box-inner .author-box .content {
+  margin-top: 8px;
+}
+.flat-subscribe.page .flat-testimonials .box-inner .author-box .content h5 {
+  margin-bottom: 1px;
+}
+.flat-subscribe.page .swiper-container {
+  position: unset;
+}
+.flat-subscribe.page .pagi3 .inner-pagi {
+  top: unset;
+  left: -425px;
+  bottom: 49px;
+  right: unset;
+  background: #FFF4E7;
+}
+
 /* flat Blog details
 -------------------------------------------------------------- */
 .flat-blog-details .post {
@@ -2179,7 +2211,7 @@ path.two {
 .flat-testimonials .box-testi .heading-section2 h6 {
   margin-bottom: 22px;
 }
-.flat-testimonials .box-testi .box-inner .inner {
+.flat-testimonials .box-inner .inner {
   padding: 33px 50px;
   background: #fff;
   border-radius: 12px;
@@ -2187,7 +2219,7 @@ path.two {
   position: relative;
   box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
 }
-.flat-testimonials .box-testi .box-inner .inner::after {
+.flat-testimonials .box-inner .inner::after {
   content: "";
   position: absolute;
   width: 0;
@@ -2197,32 +2229,29 @@ path.two {
   bottom: 0;
   margin-bottom: -33px;
 }
-.flat-testimonials .box-testi .box-inner .inner h6 {
+.flat-testimonials .box-inner .inner h6 {
   margin-bottom: 12px;
 }
-.flat-testimonials .box-testi .box-inner .inner p {
-  line-height: 26.4px;
-}
-.flat-testimonials .box-testi .box-inner .inner.inner-bottom::after {
+.flat-testimonials .box-inner .inner.inner-bottom::after {
   left: 87px;
   border-right-color: #fff;
   border-left: 0;
 }
-.flat-testimonials .box-testi .box-inner .author-box {
+.flat-testimonials .box-inner .author-box {
   margin-left: 85px;
 }
-.flat-testimonials .box-testi .box-inner .author-box .image {
+.flat-testimonials .box-inner .author-box .image {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
 }
-.flat-testimonials .box-testi .box-inner .author-box .content {
+.flat-testimonials .box-inner .author-box .content {
   margin-top: 4px;
 }
-.flat-testimonials .box-testi .box-inner .author-box .content h4 {
+.flat-testimonials .box-inner .author-box .content h4 {
   margin-bottom: 1px;
 }
-.flat-testimonials .box-testi .pagi2 .swiper-pagination2 {
+.flat-testimonials .pagi2 .swiper-pagination2 {
   margin-top: 64px;
 }
 .flat-testimonials .box-images {
@@ -2365,7 +2394,7 @@ path.two {
 .flat-count2 {
   background: #120A21;
   color: #fff;
-  padding: 80px 0 85px;
+  padding: 80px 0 86px;
 }
 .flat-count2 .themes-count {
   margin-left: -60px;
@@ -2403,7 +2432,7 @@ path.two {
 }
 
 .flat-about2 {
-  padding: 175px 0 176px;
+  padding: 174px 0 176px;
   position: relative;
 }
 .flat-about2 .mark-img .mark-1 {
@@ -2552,6 +2581,18 @@ path.two {
 .flat-service2 .inner:hover .content .meta a path {
   fill: #fff;
 }
+.flat-service2.page {
+  padding: 100px 0 39px;
+  background: #FFF4E7;
+  margin: 0 231px 140px 222px;
+}
+.flat-service2.page .heading-section {
+  margin-bottom: 54px;
+}
+.flat-service2.page .inner {
+  background: #fff;
+  margin-bottom: 62px;
+}
 
 .is_light .flat-service2 {
   background: #FFF4E7;
@@ -2661,6 +2702,10 @@ path.two {
   background-color: #120A21;
   box-shadow: 3px 5px 0 #8B54FF;
 }
+.flat-step .box-step .step:hover .number {
+  transform: rotate(-10deg);
+  box-shadow: 3px -5px 0;
+}
 .flat-step .box-step .number {
   width: 75px;
   height: 75px;
@@ -2689,8 +2734,32 @@ path.two {
 }
 .flat-step .box-images .images {
   position: absolute;
-  top: 13px;
-  right: -76px;
+  top: -24px;
+  right: -106px;
+}
+.flat-step.page {
+  padding: 150px 0 89px;
+}
+.flat-step.page .box-step .heading-section {
+  padding-right: 20px;
+}
+.flat-step.page .box-step .step {
+  background-color: #FFF4E7;
+  width: 380px;
+  padding: 40px 20px 31px 50px;
+}
+.flat-step.page .box-step .step.step-1 {
+  margin-left: 0;
+  padding: 40px 20px 31px 50px;
+}
+.flat-step.page .box-step .step.step-3 {
+  margin-left: 0;
+}
+.flat-step.page .box-step.box-1 {
+  width: 49.6%;
+}
+.flat-step.page .box-step.box-2 {
+  padding: 42px 0;
 }
 
 .is_light .flat-step .box-step .step {
@@ -2700,14 +2769,14 @@ path.two {
   background-color: #8B54FF;
   box-shadow: 3px 5px 0 #120A21;
 }
-.is_light .flat-step .box-step .step.active, .is_light .flat-step .box-step .step:hover {
+.is_light .flat-step .box-step .step.active {
   background-color: #8B54FF;
 }
-.is_light .flat-step .box-step .step.active .number, .is_light .flat-step .box-step .step:hover .number {
+.is_light .flat-step .box-step .step.active .number {
   background-color: #FFD80D;
   color: #120A21 !important;
 }
-.is_light .flat-step .box-step .step.active a, .is_light .flat-step .box-step .step:hover a {
+.is_light .flat-step .box-step .step.active a {
   color: #fff;
 }
 
@@ -3079,7 +3148,7 @@ path.two {
 }
 
 .flat-skills {
-  padding-bottom: 150px;
+  padding-bottom: 144px;
   position: relative;
 }
 .flat-skills .box-images {
@@ -3096,6 +3165,108 @@ path.two {
 }
 .flat-skills .wrap-skill .heading-section {
   padding-right: 30px;
+}
+
+.flat-team .heading-section {
+  padding: 0 300px;
+  margin-bottom: 53px;
+}
+.flat-team .box-team {
+  color: #120A21;
+  border-radius: 5px;
+}
+.flat-team .box-team .images {
+  position: relative;
+  align-items: end;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.flat-team .box-team .images .icon-social {
+  position: absolute;
+  padding: 15px 26px 14px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  opacity: 0;
+}
+.flat-team .box-team .images .icon-social a i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 3.5px;
+  margin-left: 3.5px;
+  transform: rotateY(45deg);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-team .box-team .images .icon-social a i:hover {
+  box-shadow: 2px 3px 0 #120a21;
+}
+.flat-team .box-team .content {
+  padding: 20px 15px 10px;
+}
+.flat-team .box-team .content h5 {
+  margin-bottom: 4px;
+}
+.flat-team .box-team .content .sub-title {
+  letter-spacing: 0.4px;
+}
+.flat-team .box-team:hover .images {
+  box-shadow: 5px 5px 0 #120a21;
+}
+.flat-team .box-team:hover .images .icon-social {
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.flat-team .box-team:hover .images .icon-social a i {
+  transform: rotateY(0deg);
+}
+.flat-team .pagi3 .inner-pagi2 {
+  margin-top: 46px;
+  background: #FFF4E7;
+}
+
+.flat-business {
+  padding-top: 0;
+}
+.flat-business .box-images {
+  margin-left: -2px;
+}
+.flat-business .business-box {
+  padding: 27px 20px 0 44px;
+}
+.flat-business .business-box .heading-section {
+  padding-right: 50px;
+  margin-bottom: 34px;
+}
+.flat-business .business-box p {
+  margin-bottom: 30px;
+}
+
+.flat-we-do {
+  padding-top: 109px;
+}
+.flat-we-do .box-images {
+  padding-left: 23px;
+}
+.flat-we-do .we-do-box {
+  padding: 75px 30px 0 84px;
+}
+.flat-we-do .we-do-box .heading-section {
+  padding-right: 50px;
+  margin-bottom: 34px;
+}
+.flat-we-do .we-do-box p {
+  margin-bottom: 41px;
 }
 
 /* Footer
@@ -3902,22 +4073,6 @@ path.two {
   margin-top: 50px;
   position: relative;
   bottom: 0 !important;
-}
-
-.flat-team .swiper-pagination {
-  position: relative;
-  margin-top: 71px;
-}
-.flat-team .swiper-pagination-bullet {
-  background: transparent;
-  width: 16px;
-  height: 16px;
-  margin: 0 5px !important;
-  opacity: 1;
-  border: 1px solid #FFD80D;
-}
-.flat-team .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #FFD80D;
 }
 
 .slider .swiper-pagination2 {

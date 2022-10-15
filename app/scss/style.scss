@@ -982,6 +982,16 @@ a {
             line-height: 50.4px;
         }
     }
+    &.style4 {
+        h6 {
+            margin-bottom: 29px;
+        }
+        h2 {
+            letter-spacing: -0.8px;
+            line-height: 46.2px;
+            text-transform: unset;
+        }
+    }
 }
 
 .heading-section2 {
@@ -1128,13 +1138,10 @@ a {
 
 /* donat progress */
 .progress-bar {
-    margin: 16px 0 46px;
-    // h4 {
-    //     font-size: 18px;
-    //     .progress-number {
-    //         font-weight: 400;
-    //     }
-    // }
+    margin: 16px 0 42px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .progress-title-holder {
@@ -1157,8 +1164,7 @@ a {
 
 .progress-number-mark {
     margin-bottom: 4px;
-    position: relative;
-    top: 1px;
+    position: absolute;
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);

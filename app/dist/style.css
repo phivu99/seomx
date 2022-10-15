@@ -1016,6 +1016,14 @@ a:focus, a:hover {
   font-weight: 700;
   line-height: 50.4px;
 }
+.heading-section.style4 h6 {
+  margin-bottom: 29px;
+}
+.heading-section.style4 h2 {
+  letter-spacing: -0.8px;
+  line-height: 46.2px;
+  text-transform: unset;
+}
 
 .heading-section2 {
   margin-bottom: 50px;
@@ -1176,7 +1184,10 @@ a:focus, a:hover {
 
 /* donat progress */
 .progress-bar {
-  margin: 16px 0 46px;
+  margin: 16px 0 42px;
+}
+.progress-bar:last-child {
+  margin-bottom: 0;
 }
 
 .progress-title-holder {
@@ -1198,8 +1209,7 @@ a:focus, a:hover {
 
 .progress-number-mark {
   margin-bottom: 4px;
-  position: relative;
-  top: 1px;
+  position: absolute;
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
