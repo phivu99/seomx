@@ -1857,20 +1857,21 @@ path.two {
 .flat-process .box-process .heading-section2 h6 {
   margin-bottom: 22px;
 }
-.flat-process .box-process .diagram-box {
+
+.diagram-box {
   padding-left: 6px;
   position: relative;
 }
-.flat-process .box-process .diagram-box .mark-diagram {
+.diagram-box .mark-diagram {
   left: -75px;
   top: 35px;
 }
-.flat-process .box-process .diagram {
+.diagram-box .diagram {
   width: 245px;
   margin-right: 50px;
   z-index: 3;
 }
-.flat-process .box-process .diagram .icon {
+.diagram-box .diagram .icon {
   width: 80px;
   height: 80px;
   display: flex;
@@ -1882,31 +1883,31 @@ path.two {
   display: inline-flex;
   margin-bottom: 20px;
 }
-.flat-process .box-process .diagram .icon img {
+.diagram-box .diagram .icon img {
   transition: all 0.8s ease;
 }
-.flat-process .box-process .diagram .content {
+.diagram-box .diagram .content {
   background-color: #fff;
   border-radius: 12px;
   padding: 25px 15px 20px;
 }
-.flat-process .box-process .diagram .content .sub-title {
+.diagram-box .diagram .content .sub-title {
   letter-spacing: 2.8px;
   color: #5C28CA;
   margin-bottom: 6px;
 }
-.flat-process .box-process .diagram .content h6 {
+.diagram-box .diagram .content h6 {
   line-height: 23px;
   padding: 0 14px;
   margin-bottom: 5px;
 }
-.flat-process .box-process .diagram.two {
+.diagram-box .diagram.two {
   margin-top: 61px;
 }
-.flat-process .box-process .diagram.three {
+.diagram-box .diagram.three {
   margin-top: 5px;
 }
-.flat-process .box-process .diagram:hover .icon img {
+.diagram-box .diagram:hover .icon img {
   transform: rotateY(180deg);
 }
 
@@ -1950,6 +1951,57 @@ path.two {
   bottom: -87px;
   right: 76px;
   z-index: -1;
+}
+
+.flat-process2 .heading-section {
+  padding: 0 310px;
+}
+.flat-process2 .diagram-box {
+  padding: 0 108px;
+}
+.flat-process2 .diagram-box .diagram {
+  margin-right: 0;
+  width: 287px;
+}
+.flat-process2 .diagram-box .diagram .icon {
+  margin-bottom: 23px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.3);
+  background: #FFF4E7;
+}
+.flat-process2 .diagram-box .diagram .content {
+  border: 1px solid #fff;
+  box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.15);
+  padding: 32px 25.5px 24px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-process2 .diagram-box .diagram .content .sub-title {
+  margin-bottom: 14px;
+}
+.flat-process2 .diagram-box .diagram .content h4 {
+  margin-bottom: 10px;
+}
+.flat-process2 .diagram-box .diagram.one {
+  margin-top: 55px;
+}
+.flat-process2 .diagram-box .diagram.two {
+  margin-top: 0px;
+}
+.flat-process2 .diagram-box .diagram.three {
+  margin-top: 14px;
+}
+.flat-process2 .diagram-box .diagram:hover .icon {
+  background: #fff;
+}
+.flat-process2 .diagram-box .diagram:hover .content {
+  border: 1px solid #8B54FF;
+}
+.flat-process2 .diagram-box .mark-diagram {
+  left: -30px;
+  top: -36px;
 }
 
 .flat-growing {
@@ -2424,6 +2476,12 @@ path.two {
   color: #fff;
   font-family: "Outfit", sans-serif;
 }
+.flat-count2 .counter-box .number.number-one::after {
+  content: "+";
+  font-size: 42px;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
 .flat-count2 .counter-box .title-count {
   font-size: 16px;
 }
@@ -2585,6 +2643,10 @@ path.two {
   padding: 100px 0 39px;
   background: #FFF4E7;
   margin: 0 231px 140px 222px;
+}
+.flat-service2.page .mark-img .mark-1,
+.flat-service2.page .mark-img .mark-2 {
+  top: 0;
 }
 .flat-service2.page .heading-section {
   margin-bottom: 54px;
@@ -3267,6 +3329,130 @@ path.two {
 }
 .flat-we-do .we-do-box p {
   margin-bottom: 41px;
+}
+
+.flat-why-choose .box-images {
+  margin-left: 42px;
+  margin-top: -9px;
+}
+.flat-why-choose .why-choose-box {
+  padding: 31px 15px 0 0px;
+  margin-left: -5px;
+}
+.flat-why-choose .why-choose-box .heading-section {
+  margin-bottom: 33px;
+}
+.flat-why-choose .why-choose-box p {
+  margin-bottom: 32px;
+}
+.flat-why-choose .why-choose-box .check li h6 {
+  letter-spacing: -0.1px;
+}
+.flat-why-choose .why-choose-box .check li h6::before {
+  background: #8B54FF;
+}
+
+.flat-technical {
+  padding-bottom: 123px;
+}
+.flat-technical .box-images {
+  margin-left: 7px;
+  margin-top: -19px;
+}
+.flat-technical .technical-box {
+  padding: 26px 50px 0 78px;
+}
+.flat-technical .technical-box .heading-section {
+  margin-bottom: 36px;
+}
+.flat-technical .icon-warp .icon-box {
+  margin-bottom: 37px;
+}
+.flat-technical .icon-warp .icon-box:last-child {
+  margin-bottom: 0;
+}
+.flat-technical .icon-warp .icon-box .icon {
+  flex: none;
+  padding: 6px 15px 0 1px;
+  width: 15%;
+}
+.flat-technical .icon-warp .icon-box h4 {
+  margin-bottom: 10px;
+}
+.flat-technical .icon-warp .icon-box.box-2 h4 {
+  margin-bottom: 8px;
+}
+
+.flat-why-take .heading-section {
+  padding: 0 350px;
+}
+.flat-why-take .heading-section h6 {
+  margin-bottom: 26px;
+}
+.flat-why-take .wrap-take .box .icon {
+  margin-bottom: 33px;
+}
+.flat-why-take .wrap-take .box .content h3 {
+  letter-spacing: -0.7px;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+.flat-why-take .wrap-take .box.box-1 {
+  padding: 62px 50px 52px 0;
+  width: 31.7%;
+}
+.flat-why-take .wrap-take .box.box-2 {
+  box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.12);
+  padding: 48px 62px 41px;
+  width: 34.7%;
+}
+.flat-why-take .wrap-take .box.box-3 {
+  padding: 62px 20px 52px 88px;
+  width: 33.6%;
+}
+
+.flat-statistics .box-heading {
+  padding: 72px 69px;
+}
+.flat-statistics .box-heading .heading-section {
+  margin-bottom: 22px;
+}
+.flat-statistics .box-heading p {
+  margin-bottom: 41px;
+}
+.flat-statistics .themes-count {
+  margin-left: -60px;
+  border-radius: 12px;
+}
+.flat-statistics .counter-box {
+  position: relative;
+  background-color: #8B54FF;
+  margin-left: 60px;
+  margin-right: 10px;
+  padding: 21px 19px 22px 30px;
+  box-shadow: 7px 7px 0 #FFD80D;
+  margin-bottom: 30px;
+}
+.flat-statistics .counter-box .icon {
+  margin-right: 16px;
+}
+.flat-statistics .counter-box .number {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.flat-statistics .counter-box .number.number-style::after {
+  content: "k";
+  font-size: 42px;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+.flat-statistics .counter-box .title-count {
+  font-size: 16px;
+}
+.flat-statistics .counter-box .content {
+  padding-top: 8px;
 }
 
 /* Footer

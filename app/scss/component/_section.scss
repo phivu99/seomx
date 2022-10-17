@@ -925,56 +925,57 @@
                 margin-bottom: 22px;
             }
         }
-        .diagram-box {
-            padding-left: 6px;
-            position: relative;
-            .mark-diagram {
-                left: -75px;
-                top: 35px;
+    }
+}
+
+.diagram-box {
+    padding-left: 6px;
+    position: relative;
+    .mark-diagram {
+        left: -75px;
+        top: 35px;
+    }
+    .diagram {
+        width: 245px;
+        margin-right: 50px;
+        z-index: 3;
+        .icon {
+            width: 80px;
+            height: 80px;
+            @include flex-center;
+            border: 1px solid $color-8;
+            background-color: $color-1;
+            border-radius: 50%;
+            display: inline-flex;
+            margin-bottom: 20px;
+            img {
+                transition: all 0.8s ease;
             }
         }
-        .diagram {
-            width: 245px;
-            margin-right: 50px;
-            z-index: 3;
-            .icon {
-                width: 80px;
-                height: 80px;
-                @include flex-center;
-                border: 1px solid $color-8;
-                background-color: $color-1;
-                border-radius: 50%;
-                display: inline-flex;
-                margin-bottom: 20px;
-                img {
-                    transition: all 0.8s ease;
-                }
+        .content {
+            background-color: $color-1;
+            border-radius: 12px;
+            padding: 25px 15px 20px;
+            .sub-title {
+                letter-spacing: 2.8px;
+                color: $color-9;
+                margin-bottom: 6px;
             }
-            .content {
-                background-color: $color-1;
-                border-radius: 12px;
-                padding: 25px 15px 20px;
-                .sub-title {
-                    letter-spacing: 2.8px;
-                    color: $color-9;
-                    margin-bottom: 6px;
-                }
-                h6 {
-                    line-height: 23px;
-                    padding: 0 14px;
-                    margin-bottom: 5px;
-                }
+            h6 {
+                line-height: 23px;
+                padding: 0 14px;
+                margin-bottom: 5px;
             }
-            &.two {
-                margin-top: 61px;
-            }
-            &.three {
-                margin-top: 5px;
-            }
-            &:hover {
-                .icon img {
-                    transform: rotateY(180deg);
-                }
+        }
+        &.two {
+            margin-top: 61px;
+        }
+        &.three {
+            margin-top: 5px;
+        }
+        &:hover {
+            .icon img {
+                transform: rotateY(180deg);
             }
         }
     }
@@ -1015,6 +1016,63 @@
         z-index: -1;
     }
 }
+
+.flat-process2 { 
+    .heading-section {
+        padding: 0 310px;
+    }
+    .box-process {
+       
+    }
+    
+    .diagram-box {
+        padding: 0 108px;
+        
+        .diagram {
+            margin-right: 0;
+            width: 287px;
+            .icon {
+                margin-bottom: 23px;
+                box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.3);
+                background: $bg-color;
+            }
+            .content {
+                border: 1px solid $color-1;
+                box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.15);
+                padding: 32px 25.5px 24px;
+                @include transition3;
+                .sub-title {
+                    margin-bottom: 14px;
+                }
+                h4 {
+                    margin-bottom: 10px;
+                }
+            }
+            &.one {
+                margin-top: 55px;
+            }
+            &.two {
+                margin-top: 0px;
+            }
+            &.three {
+                margin-top: 14px;
+            }
+            &:hover {
+                .icon {
+                    background: $color-1;
+                }
+                .content {
+                    border: 1px solid $color-3;
+                }
+            }
+        }
+        .mark-diagram {
+            left: -30px;
+            top: -36px;
+        }
+    }
+}
+
 
 .flat-growing {
     border-bottom: 1px solid $color-8;
@@ -1486,11 +1544,19 @@
         .number {
             font-size    : 42px;
             font-weight  : 600;
-            margin-bottom: 10px;
+            margin-bottom: 10px; 
             color: $color-1;
             &.number-style {
                 &::after {
                     content: "k";
+                    font-size: 42px;
+                    color: $color-1;
+                    font-family: $font-1;
+                }
+            }
+            &.number-one {
+                &::after {
+                    content: "+";
                     font-size: 42px;
                     color: $color-1;
                     font-family: $font-1;
@@ -1502,8 +1568,7 @@
         }
         .content {
             padding-top: 8px;
-        }
-              
+        }    
     }
 }
 
@@ -1640,6 +1705,10 @@
         padding: 100px 0 39px;
         background: $bg-color;
         margin: 0 231px 140px 222px;
+        .mark-img .mark-1,
+        .mark-img .mark-2 {
+            top: 0;
+        }
         .heading-section {
             margin-bottom: 54px;
         }
@@ -2288,4 +2357,151 @@
             margin-bottom: 41px;
         }
     }
+}
+
+.flat-why-choose {
+    .box-images {
+        margin-left: 42px;
+        margin-top: -9px;
+    }
+    .why-choose-box {
+        padding: 31px 15px 0 0px;
+        margin-left: -5px;
+        .heading-section {
+            margin-bottom: 33px;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+        .check li h6 {
+            letter-spacing: -0.1px;
+            &::before {
+                background: $color-3;
+            }
+        }
+    }
+  
+}
+
+.flat-technical {
+    padding-bottom: 123px;
+    .box-images {
+        margin-left: 7px;
+        margin-top: -19px;
+    }
+    .technical-box {
+        padding: 26px 50px 0 78px;
+        .heading-section {
+            margin-bottom: 36px;
+        }
+    }
+    .icon-warp {
+        .icon-box {
+            margin-bottom: 37px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .icon {
+                flex: none;
+                padding: 6px 15px 0 1px;
+                width: 15%;
+            }
+            h4 {
+                margin-bottom: 10px;
+            }
+            &.box-2 {
+                h4 {
+                    margin-bottom: 8px;
+                }
+            }
+        } 
+    }
+}
+
+.flat-why-take {
+    .heading-section {
+        padding: 0 350px;
+        h6 {
+            margin-bottom: 26px;
+        }
+    }
+    .wrap-take {
+        .box {
+            // width: calc(33.333% - 0px);        
+            .icon {
+                margin-bottom: 33px;
+            }
+            .content {
+                h3 {
+                    letter-spacing: -0.7px;
+                    padding-right: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+            &.box-1 { 
+                padding: 62px 50px 52px 0;
+                width: 31.7%;
+            }
+            &.box-2 {
+                box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.12);
+                padding: 48px 62px 41px;
+                width: 34.7%;
+            }
+            &.box-3 {
+                padding: 62px 20px 52px 88px;
+                width: 33.6%;
+            }
+        }
+    }
+}
+
+.flat-statistics {
+   
+    .box-heading {
+        padding: 72px 69px;
+        .heading-section {
+            margin-bottom: 22px;
+        }
+        p {
+            margin-bottom: 41px;
+        }
+    }
+    .themes-count {
+        margin-left: -60px;
+        border-radius: 12px;
+    }
+    .counter-box {
+        position      : relative;
+        background-color: $color-3;
+        // width: calc(25% - 60px);
+        margin-left: 60px;
+        margin-right: 10px;
+        padding: 21px 19px 22px 30px;
+        box-shadow: 7px 7px 0 $color-6;
+        margin-bottom: 30px;
+        .icon {
+            margin-right: 16px;
+        }
+        .number {
+            font-size    : 42px;
+            font-weight  : 600;
+            margin-bottom: 10px;
+            color: $color-1;
+            &.number-style {
+                &::after {
+                    content: "k";
+                    font-size: 42px;
+                    color: $color-1;
+                    font-family: $font-1;
+                }
+            }
+        } 
+        .title-count {
+            font-size: 16px;
+        }
+        .content {
+            padding-top: 8px;
+        }    
+    }
+    
 }
