@@ -256,6 +256,32 @@ var swiper =  new Swiper(".carousel-7", {
     },
 });
 
+var swiper =  new Swiper(".carousel-9", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    // slidesPerColumn: 2,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel-testi", {
     // autoplay: {
     //     delay: 5000,
@@ -285,30 +311,7 @@ var swiper =  new Swiper(".carousel-testi", {
     },
 });
 
-var swiper =  new Swiper(".carousel-9", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
-    loop:false,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next4",
-        prevEl: ".swiper-button-prev4",
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-        992: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-    },
-});
+
 
 var swiper =  new Swiper(".carousel-team", {
     // autoplay: {
@@ -339,7 +342,7 @@ var swiper =  new Swiper(".carousel-team", {
     },
 });
 
-var swiper =  new Swiper(".carousel-team2", {
+var swiper =  new Swiper(".carousel-works", {
     // autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,
@@ -366,9 +369,9 @@ var swiper =  new Swiper(".carousel-team2", {
             spaceBetween: 30,
         },
         1200: {
-            slidesPerView: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 50,
+            slidesPerView: 2,
+            slidesPerColumn: 4,
+            spaceBetween: 80,
         },
     },
 });

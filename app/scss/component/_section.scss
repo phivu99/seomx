@@ -1021,13 +1021,9 @@
     .heading-section {
         padding: 0 310px;
     }
-    .box-process {
-       
-    }
-    
+
     .diagram-box {
         padding: 0 108px;
-        
         .diagram {
             margin-right: 0;
             width: 287px;
@@ -1320,6 +1316,7 @@
                 @include flex-center;
                 background: $color-7;
                 border-radius: 50%;
+                flex: none;
             }
         }
     }
@@ -1471,13 +1468,6 @@
     background: $color-2;
     color: $color-1;
     padding: 80px 0 90px;
-    // .wrap-count {
-    //     margin-left: -30px;
-    //     .box {
-    //         width: calc(33.333% - 30px);
-    //         margin-left: 30px;
-    //     }
-    // }
     .themes-count {
         margin-left: -60px;
         border-radius: 12px;
@@ -1505,7 +1495,6 @@
             // margin-bottom: 12px;
             margin-bottom: 42px;
             color: $color-1;
-        
             &.number-style {
                 &::after {
                     content: "k";
@@ -1765,6 +1754,55 @@
     .swiper-container {
         padding: 137px 50px 50px;
         margin: -137px -50px -50px;
+    }
+    &.page {
+        padding: 130px 0 135px;
+        .heading-section {
+            padding: 0 200px;
+            margin-bottom: 49px;
+        }
+        .wrap-works {
+            margin: 0 94px;
+            .content-inner {
+                margin-left: -80px;
+                flex-wrap: wrap;
+            }
+            .box {
+                // width: 50%;
+                width: calc(50% - 80px);
+                margin-left: 80px;
+                margin-bottom: 69px;
+                .content {
+                    padding: 24px 40px 27px 37px;
+                }
+            }
+            .sc-btn-button {
+                margin-top: -9px;
+            }
+        }
+        .flat-tabs {
+            .box-tab {
+                margin-bottom: 50px;
+            }
+            .tab-title li { 
+                margin-right: 0.5px;
+                margin-left: 0.5px;
+                padding-bottom: 0;
+                .inner { 
+                    @include transition3;
+                    font-weight: 600;
+                    padding: 8px 15px;
+                    cursor: pointer;
+                }
+                &.active .inner,
+                &:hover .inner {
+                    // color: $color-6;
+                    @include transition3;
+                    box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.25);
+                    border-radius: 7px;
+                }
+            }
+        }
     }
 }
 
@@ -2340,6 +2378,14 @@
             margin-bottom: 30px;
         }
     }
+    &.page {
+        .box-images {
+            margin-left: 11px;
+        }
+        .business-box {
+            padding: 27px 10px 0 56px;
+        }
+    }
 }
 
 .flat-we-do {
@@ -2380,7 +2426,6 @@
             }
         }
     }
-  
 }
 
 .flat-technical {
@@ -2426,8 +2471,7 @@
         }
     }
     .wrap-take {
-        .box {
-            // width: calc(33.333% - 0px);        
+        .box {      
             .icon {
                 margin-bottom: 33px;
             }
@@ -2456,7 +2500,7 @@
 }
 
 .flat-statistics {
-   
+    padding-bottom: 102px;
     .box-heading {
         padding: 72px 69px;
         .heading-section {
@@ -2470,28 +2514,70 @@
         margin-left: -60px;
         border-radius: 12px;
     }
+    .count-wrap-1 {
+        width: 54.3%;
+        .box-1 {
+            margin-left: 181px;
+        }
+        .box-2 {
+            margin-left: 124px;
+            margin-right: 25px;
+        }
+       
+    }
+    .count-wrap-2 {
+        width: 40%;
+        .box-3 {
+            margin-left: 35px;
+            margin-top: 30px;
+        }
+        .box-4 {
+            margin-right: 49px;
+            margin-left: 3px;
+        }
+    }
     .counter-box {
         position      : relative;
-        background-color: $color-3;
-        // width: calc(25% - 60px);
-        margin-left: 60px;
-        margin-right: 10px;
-        padding: 21px 19px 22px 30px;
-        box-shadow: 7px 7px 0 $color-6;
+        background-color: $color-1;
+        padding: 41px 19px 37px 39px;
         margin-bottom: 30px;
+        height: 226px;
+        box-shadow: 0px 10px 60px rgba(139, 84, 255, 0.12);
+        @include transition3;
+        &:hover {
+            box-shadow: 5px 5px 0  rgb(139, 84, 255),
+            0px 10px 60px rgba(139, 84, 255, 0.12);
+            .icon svg {
+                transform: rotateY(360deg);
+            }
+        }
         .icon {
-            margin-right: 16px;
+            margin-bottom: 25px;
+            svg {
+                transition: all 0.8s ease;
+                path {
+                    fill: $color-3;
+                }
+            }
         }
         .number {
             font-size    : 42px;
             font-weight  : 600;
-            margin-bottom: 10px;
-            color: $color-1;
+            margin-bottom: 14px;
+            color: $color-2;
             &.number-style {
                 &::after {
                     content: "k";
                     font-size: 42px;
-                    color: $color-1;
+                    color: $color-2;
+                    font-family: $font-1;
+                }
+            }
+            &.number-one {
+                &::after {
+                    content: "+";
+                    font-size: 42px;
+                    color: $color-2;
                     font-family: $font-1;
                 }
             }
@@ -2503,5 +2589,98 @@
             padding-top: 8px;
         }    
     }
-    
+}
+
+.flat-pricing {
+    padding-bottom: 137px;
+    .heading-section {
+        padding: 0 300px;
+    }
+    .box {
+        background: $color-1;
+        padding: 49px 50px 55px;
+        box-shadow: 7px 7px 0  transparent,
+                    0px 10px 60px rgba(139, 84, 255, 0.12);
+        @include transition3;
+        .sub-title {
+            margin-bottom: 18px;
+        }
+        .title-price {
+            align-items: end;
+            margin-bottom: 12px;
+            h2 {
+                line-height: 39px;
+                letter-spacing: -0.7px;
+                color: $color-3;
+                @include transition3;
+            }
+        }
+        p {
+            margin-bottom: 40px;
+            @include transition3;
+        }
+        .check {
+            margin-bottom: 51px;
+            li {
+                margin-bottom: 20px;
+                h6 {
+                    font-family: 'Nunito Sans';
+                    letter-spacing: 0;
+                    &::before {
+                        width: 25px;
+                        height: 25px;
+                        background: $color-3;
+                        margin-right: 13px;
+                        @include transition3;
+                    }
+                }
+            }
+        }
+        .cta {
+            transition: 0.4s;
+        }
+        &.active,
+        &:hover {
+            background: $color-3;
+            color: $color-1;
+            box-shadow: 7px 7px 0  $color-2,
+                    0px 10px 60px rgba(139, 84, 255, 0.12);
+            .title-price {
+                align-items: end;
+                margin-bottom: 12px;
+                h2 {
+                    color: $color-1;
+                }
+            }
+            p {
+                color: $color-1;
+            }
+            .check li h6::before {
+                background: $color-1;
+                color: $color-2;
+            }
+            .cta.btn-1 {
+                box-shadow: 8px 8px 0 #120a21;
+                background: $color-6 !important;
+                span {
+                    color: $color-2;
+                }
+                path {
+                    fill: $color-2;
+                }
+            }
+            @keyframes color_anim {
+                0% {
+                    fill: $color-3;
+                }
+                50% {
+                    fill: $color-2;
+                }
+                100% {
+                    fill: $color-3
+                }
+              }
+        }
+       
+    }
 }
