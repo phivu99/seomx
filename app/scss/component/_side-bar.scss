@@ -77,38 +77,6 @@
         }
     }
 
-    /* recent news */
-  
-    // .widget {
-    //     .recent-news {
-    //         li {
-    //             margin-bottom: 41px;
-    //             &:last-child {
-    //                 margin-bottom: 0px !important;
-    //             }          
-    //             .thumb {
-    //                 position: relative;
-    //                 border-radius: 3px;
-    //                 overflow     : hidden; 
-    //                 width: 90px;
-    //                 height: 90px; 
-    //                 flex: none;
-    //             }
-    
-    //             .content {         
-    //                 padding-left: 20px;
-    //                 h5 {
-    //                     margin-bottom: 10px;
-    //                 }
-    //                 h6 {
-    //                     font-family: $font-2;
-    //                     color: $color-3 !important;
-    //                     transition        : all 0s ease;
-    //                 }
-    //             }
-    //         }   
-    //     }
-    // }
     .widget-categories {
         // padding: 32px 38px 44px;
         li {
@@ -191,6 +159,92 @@
                 box-shadow: 5px 5px 0 $color-3;
             }
         }   
+    }
+}
+
+.flat-portfolio-details {
+    .side-bar {
+        .widget {
+            border: 1px solid $bg-color;
+            background: $bg-color;
+            
+        }
+        .boder-box {
+            height: 1px;
+            width: 100%;
+            background: $color-2;
+            position: relative;
+           
+            &::before {
+                content: "";
+                width: 85%;
+                height: 1px;
+                background: $color-2;
+                position: absolute;
+                top: -6px;
+            }
+        }
+        h3 {
+            letter-spacing: -0.5px;
+        }
+        .title-info {
+            margin-bottom: 26px;
+        }
+        .widget-info {
+            padding: 32px 38px 30px 39px;
+            .boder-box {
+                margin-bottom: 35px;
+            }
+            
+            .box-info {
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .icon {
+                    flex: none;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }
+                h5 {
+                    margin-bottom: 1px;
+                }
+            }
+        }
+        .widget-send {
+            .boder-box {
+                margin-bottom: 30px;
+            }
+        }
+      
+        #comments .comment-form {
+            fieldset {
+                margin-bottom: 15px;
+                textarea,
+                input {
+                    background: $color-1;
+                    box-shadow: unset;
+                    border: 1px solid #120A211A;
+                    padding: 14px 14px 14px 25px;
+                    &:focus {
+                        color: $color-2;
+                        border: 1px solid $color-3;
+                        &::placeholder {
+                            color: $color-2;
+                        }
+                    }
+                }
+                textarea {
+                    padding: 14px 14px 18px 25px;
+                }  
+                &.message-wrap {
+                    margin-bottom: 8px;
+                }      
+            }
+            button {
+                padding: 12px 28px 12px 30px;
+            }
+        }
     }
 }
 

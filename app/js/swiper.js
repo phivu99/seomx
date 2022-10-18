@@ -349,8 +349,6 @@ var swiper =  new Swiper(".carousel-works", {
     // },
     loop:false,
     slidesPerView: 1,
-    slidesPerColumn: 3,
-    slidesPerColumnFill: 'row',
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -360,17 +358,15 @@ var swiper =  new Swiper(".carousel-works", {
     breakpoints: {
         768: {
             slidesPerView: 2,
-            slidesPerColumn: 2,
+            // slidesPerColumn: 2,
             spaceBetween: 30,
         },
         992: {
             slidesPerView: 3,
-            slidesPerColumn: 2,
             spaceBetween: 30,
         },
         1200: {
             slidesPerView: 2,
-            slidesPerColumn: 4,
             spaceBetween: 80,
         },
     },
