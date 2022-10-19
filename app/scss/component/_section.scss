@@ -30,11 +30,13 @@
     
     .page-title-heading {
         margin-top: 77px;
-        margin-right: 67px;
-        position: relative;
+        // margin-right: 67px;
+        // position: relative;
+        position: absolute;
+        padding: 50px 61px 51px 60px;
         box-shadow: 10px 10px 0 black;
         background: $color-3;
-        padding: 50px 15px 51px 60px;
+        // padding: 50px 15px 51px 60px;
         
         .heading {
             color      : $color-1;
@@ -1807,10 +1809,17 @@
             }
         }
         &.page2 {
-            padding-top: 0;
+            padding: 0 0 129px;
             .wrap-works .box {
                 width: unset;
                 margin: unset;
+            }
+            .heading-section {
+                padding: 0 200px;
+                margin-bottom: 60px;
+            }
+            .pagi3 .inner-pagi2 {
+                background: $bg-color;
             }
         }
     }
@@ -2309,6 +2318,11 @@
             padding-right: 30px;
         }
     }
+    &.page {
+        background: url(./../../assets/images/section/bg-skills.jpg) center center no-repeat;
+        background-size: cover;
+        padding: 125px 0 142px;
+    }
 }
 
 .flat-team {
@@ -2348,10 +2362,10 @@
         .content {
             padding: 20px 15px 10px;
             h5 {
-                margin-bottom: 4px;
+                margin-bottom: 5px;
             }
             .sub-title {
-                letter-spacing: 0.4px;
+                font-family: 'Nunito Sans';
             }  
         }
         &:hover {
@@ -2368,8 +2382,14 @@
         }
     }
     .pagi3 .inner-pagi2 {
-        margin-top: 46px;
+        margin-top: 45px;
         background: $bg-color;
+    }
+    &.page {
+        padding-bottom: 135px;
+        .box-team {
+            margin-bottom: 45px;
+        }
     }
 }
 
@@ -2649,36 +2669,7 @@
         .cta {
             transition: 0.4s;
         }
-        &.active,
-        &:hover {
-            background: $color-3;
-            color: $color-1;
-            box-shadow: 7px 7px 0  $color-2,
-                    0px 10px 60px rgba(139, 84, 255, 0.12);
-            .title-price {
-                align-items: end;
-                margin-bottom: 12px;
-                h2 {
-                    color: $color-1;
-                }
-            }
-            p {
-                color: $color-1;
-            }
-            .check li h6::before {
-                background: $color-1;
-                color: $color-2;
-            }
-            .cta.btn-1 {
-                box-shadow: 8px 8px 0 #120a21;
-                background: $color-6 !important;
-                span {
-                    color: $color-2;
-                }
-                path {
-                    fill: $color-2;
-                }
-            }
+        
             // @keyframes color_anim {
             //     0% {
             //         fill: $color-3;
@@ -2690,11 +2681,65 @@
             //         fill: $color-3
             //     }
             // }
+        &.box-style {
+            &.active,
+            &:hover {
+                background: $color-3;
+                color: $color-1;
+                box-shadow: 7px 7px 0  $color-2,
+                        0px 10px 60px rgba(139, 84, 255, 0.12);
+                .title-price {
+                    align-items: end;
+                    margin-bottom: 12px;
+                    h2 {
+                        color: $color-1;
+                    }
+                }
+                p {
+                    color: $color-1;
+                }
+                .check li h6::before {
+                    background: $color-1;
+                    color: $color-2;
+                }
+                .cta.btn-1 {
+                    box-shadow: 8px 8px 0 #120a21;
+                    background: $color-6 !important;
+                    span {
+                        color: $color-2;
+                    }
+                    path {
+                        fill: $color-2;
+                    }
+                }
+            }
+        }
+    }
+    &.page {
+        padding-bottom: 130px;
+        .heading-section {
+            margin-bottom: 54px;
+        }
+        .wrap-pricing {
+            .image-box {
+                background: url(./../../assets/images/img-box/bg-pricing.jpg) center center no-repeat;
+                background-size: cover;
+                padding: 15px 15px;
+                text-align: center;
+                height: 265px;
+            }
+            .box {
+                padding: 38px 50px 45px;
+                .check {
+                    margin-bottom: 41px;
+                }
+            }
         }
     }
 }
 
 .flat-portfolio-details {
+    padding-bottom: 122px;
     .post {
         .title-box {
             margin-bottom: 27px;
@@ -2750,5 +2795,81 @@
     .row-boder {
         padding-bottom: 64px;
         border-bottom: 1px solid $color-2;
+    }
+}
+
+.flat-testimonials3 {
+    
+    .heading-section {
+        padding: 0 370px 0 340px;
+    }
+    .box {
+        // box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
+        border: 1px solid $color-2;
+        border-radius: 12px;
+        padding: 33px;  
+        position: relative;
+        @include transition3; 
+        &.active,
+        &:hover {
+            box-shadow: -7px -7px 0 $color-3;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -21px;
+            left: 63px;
+            height: 40px;
+            width: 40px;
+            transform: rotate(45deg);
+            background-color: #fff;
+            border-right: 1px solid $color-2;
+            border-bottom: 1px solid $color-2;
+        }
+        .icon {
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            @include flex-center;
+            background-color: $color-6;
+            box-shadow: 5px 5px 0 $color-3;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        .texts {
+            line-height: 37px;
+            margin-bottom: 20px;
+        }
+        .author-box {
+            text-align: left;
+            margin-left: 49px;
+            .image {
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 15px;
+            }
+            .content {
+                margin-top: 4px;
+                h4 {
+                    margin-bottom: 2px;
+                }              
+            }
+        }  
+        .mark-1 {
+            left: 12%;
+            top: 15%;
+        }
+        .mark-2 {
+            right: 13.5%;
+            top: 16%;
+        }
+    }
+    .pagi3 .inner-pagi2 {
+        margin-top: 97px;
+        background: $bg-color;
+    }
+    .shaw-box {
+        padding: 30px;
+        margin: -30px;
     }
 }

@@ -349,6 +349,7 @@ label.error {
 .flex-five {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-center {
@@ -456,6 +457,10 @@ button {
 
 .mb-203 {
   margin-bottom: 203px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 /* link style
