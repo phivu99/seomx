@@ -2723,7 +2723,7 @@
         .flat-step {
             padding: 0;
             margin-bottom: 29px;
-            .box-step {
+            .box-step { 
                 .step {
                     margin-bottom: 30px;
                     &:hover {
@@ -2736,7 +2736,7 @@
                 }
                 &.box-1 {
                     width: unset;
-                    margin-right: 30px;
+                    margin-right: 30px; 
                 }
                 &.box-2 {
                     padding: 0;
@@ -2746,5 +2746,9 @@
         .check li h6::before {
             background: $color-3;
         }
+    }
+    .row-boder {
+        padding-bottom: 64px;
+        border-bottom: 1px solid $color-2;
     }
 }

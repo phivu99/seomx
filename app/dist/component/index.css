@@ -3739,6 +3739,10 @@ path.two {
 .flat-portfolio-details .post .check li h6::before {
   background: #8B54FF;
 }
+.flat-portfolio-details .row-boder {
+  padding-bottom: 64px;
+  border-bottom: 1px solid #120A21;
+}
 
 /* Footer
 -------------------------------------------------------------- */
