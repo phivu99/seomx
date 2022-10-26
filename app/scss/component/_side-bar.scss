@@ -257,36 +257,39 @@
             border: 0px;
             padding: 0;
             &.search {
-                margin-bottom: 30px;
+                margin-bottom: 48px;
             }
             &:last-child {
                 margin-bottom: 0;
             }
         }
+        .widget-title {
+            padding-left: 0px;
+            letter-spacing: -0.2px;
+        }
         .widget-title.title-list {
-            margin-bottom: 14px;
+            margin-bottom: 25px;
         }
         .widget-categorie {
             padding: 0;
-            margin-bottom: 55px;
+            margin-bottom: 43px;
             li {
                 position: relative;
-                margin-bottom: 15.5px;
-                border-radius: 5px;
-                padding: 11px 17px 11px 19px;
-                border: 1px solid $bg-color;
-                background: $bg-color;
+                margin-bottom: 20px;
                 @include transition3;
+                h6 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
                 span {
                     float: right;
                 }
-                &.active,
-                &:hover {
-                    border: 1px solid $color-6;
-                    background: $color-1;
-                }
+              
                 &:last-child {
                     margin-bottom: 0;
+                }
+                &:hover {
+                    color: $color-3;
                 }
             }
         }
@@ -305,65 +308,67 @@
             }
         }
         .widget-price {
-            padding: 0;
+            padding-left: 4px;
             h3 {
-                margin-bottom: 18px;
+                margin-bottom: 28px;
             }
             .buttons {
-                margin-right: -2px;
-                a {
-                    background: $color-6;
-                    color: $color-1;
-                    border-radius: 5px;
-                    padding: 5px 11px 1px;
-                    &:hover {
-                        background: $color-3;
-                    }
-                }
+                margin-right: 16px;
             }
         }
         .widget-product {
             padding: 0;
             h3 {
-                margin-bottom: 9px;
+                margin-bottom: 27px;
             }
         }
-        .flat-special .box-special {
-            margin-bottom: 20px;
-            box-shadow: unset;
-            text-align: unset;
+        .wrap-product .box-product {
+            margin-bottom: 28px;
+
             &:last-child {
                 margin-bottom: 0;
             }
             .images {
                 width: 80px;
                 height: 80px;
+                background: #FFFAF4;
+                border: 1px solid rgba(0, 0, 0, 0.13);
+                @include flex-center;
             }
             .content {
-                padding: 0px 0 0 14px;
-                margin-top: -2px;
+                padding-left: 30px;
+                margin-top: -6px;
                 .star {
-                    margin-bottom: 2px;
+                    margin-bottom: 10px;
                     svg {
-                        width: 12px;
-                        height: 12px;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 1px;
+                        fill: #FAC641;
                     }
+                }
+                h6 {
+                    margin-bottom: 6px;
                 }
             }
         }    
         .widget-tags {
             padding: 0;
             h3 {
-                margin-bottom: 15px;
+                margin-bottom: 25px;
+                padding-left: 3px
             }
             .tags_cloud_inner a {
-                background: $bg-color;
-                padding: 5px 19.5px 5px;
+                background: $color-1;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                box-shadow: unset;
+                padding: 5px 19.5px 4px;
                 margin-right: 7px;
-                margin-bottom: 10.5px;
+                margin-bottom: 8.5px;
                 &:hover,
                 &.active {
-                    background: $color-6;
+                    background: $color-3;
                 }
             }
             .box-style {
@@ -371,31 +376,7 @@
                 padding-right: 9px;
             }
         }
-        .widget-save {
-            background: url(./../../assets/images/section/bg-shop-sidebar.jpg) center center no-repeat;
-            background-size: cover;
-            border-radius: 5px;
-            padding: 69px 23px 66px;
-            
-            h3 {
-                font-family: 'Satisfy';
-                font-weight: 400;
-                display: inline-block;
-                margin-bottom: 13px;
-                &::after {
-                    content: "";
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                    background: $color-1;
-                    right: 0;
-                    bottom: 4px;
-                }
-            }
-            .title {
-                letter-spacing: 0.15px;
-            }
-        }
+  
     }
    
 }
@@ -458,16 +439,16 @@
   }
   
   .noUi-horizontal {
-    height: 4px;
+    height: 3px;
   }
   
   .noUi-horizontal .noUi-handle {
     position: relative;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     left: 0px;
-    top: -5px;
+    top: -3px;
     background-color: $color-3;
   }
 
@@ -475,6 +456,7 @@
    */
   .noUi-background {
     background: #D6D7D9;
+    // background: rgba(18,10,33,0.2) ;
   }
   
   .noUi-connect {
@@ -488,10 +470,10 @@
   }
   
   .noUi-target {
-    width: 97%;
-    height: 6px ;
+    width: 100%;
+    height: 3px ;
     border-radius: 2px;
-    margin-bottom: 26px;
+    margin-bottom: 12px;
   }
   
   .noUi-horizontal .noUi-handle.noUi-handle-upper {
@@ -535,7 +517,8 @@
   }
   .slider-labels .caption {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: $font-2;
   }
   #slider-range-value1::after {
     content: " — ";

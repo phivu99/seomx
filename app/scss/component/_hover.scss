@@ -27,6 +27,7 @@
 
 .hover-img2 {
     .img-style2 {
+        overflow: hidden;
         img {
             @include transition3;
         }
