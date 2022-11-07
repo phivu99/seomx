@@ -823,18 +823,18 @@ a {
     border-radius: 4px;
     text-align: center;
     z-index: 999;
-    right: 14px;
-    bottom: 23px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    right: 20px;
+    bottom: 40px;
+    // border-radius: 50%;
+    // -webkit-border-radius: 50%;
+    // -moz-border-radius: 50%;
+    // -ms-border-radius: 50%;
+    // -o-border-radius: 50%;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
     overflow: hidden;
-
+    box-shadow: 5px 5px 0 $color-2;
     &.show {
         right: 15px;
         opacity: 1;
@@ -860,13 +860,14 @@ a {
     &::after {
         content: "\f077";
         font-family: "Font Awesome 5 Pro";
-        font-size: 18px;
+        font-size: 17px;
         color: #ffffff;
         font-weight: 600;
     }
 
     &:hover {
-        transform: translateY(-7%);
+        // transform: translateY(-7%);
+        box-shadow: 5px 5px 0 $color-6;
     }
 }
 

@@ -86,7 +86,7 @@ var swiper =  new Swiper(".carousel-2", {
     loop:true,
     slidesPerView: 1,
     spaceBetween: 30,
-    initialSlide: 1,
+    // initialSlide: 1,
     centeredSlides: true,
     navigation: {
         clickable: true,
@@ -101,6 +101,7 @@ var swiper =  new Swiper(".carousel-2", {
         768: {
             slidesPerView: 2,
             spaceBetween: 30,
+            centeredSlides: false,
         },
         991: {
             slidesPerView: 3,
@@ -206,9 +207,9 @@ var swiper =  new Swiper(".carousel-6", {
     // },
     loop:false,
     slidesPerView: 1,
-    slidesPerColumn: 3,
-    slidesPerColumnFill: 'row',
-    spaceBetween: 20,
+    // slidesPerColumn: 3,
+    // slidesPerColumnFill: 'row',
+    spaceBetween: 30,
     navigation: {
         clickable: true,
         nextEl: ".swiper-button-next4",
@@ -217,7 +218,6 @@ var swiper =  new Swiper(".carousel-6", {
     breakpoints: {
         768: {
             slidesPerView: 2,
-            slidesPerColumn: 2,
             spaceBetween: 30,
         },
         992: {
@@ -301,13 +301,14 @@ var swiper =  new Swiper(".carousel-testi", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
         },
         992: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
+
     },
 });
 

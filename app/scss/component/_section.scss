@@ -280,6 +280,7 @@
                     border: 2px solid $color-1;
                     margin-right: 10px;
                     border-radius: 50%;
+                    flex: none;
                 }
             }
         }  
@@ -961,6 +962,20 @@
             background-color: $color-1;
             border-radius: 12px;
             padding: 25px 15px 20px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: -7px;
+                left: 50%;
+                transform: translateX(-50%);
+                right: 0;
+                width: 90%;
+                height: 100%;
+                background: #fff;
+                clip-path: polygon(50% 0%, 100% 5%, 100% 99%, 0 100%, 0 5%);
+                z-index: -1;
+            }
             .sub-title {
                 letter-spacing: 2.8px;
                 color: $color-9;
@@ -1206,8 +1221,8 @@
                 background-color: $color-1;
                 margin-left: -5px;
                 border-radius: 12px;
-                padding: 33px 15px 21px 45px;
-                margin-right: 50px;
+                padding: 33px 45px 21px 45px;
+                display: inline-flex;
             }
             .counter-box {
                 position      : relative;
@@ -1332,6 +1347,7 @@
         padding: 131px 97px 122px 307px;
         width: 50%;
         background: url(./../../assets/images/section/bg-testimonials-1.png) center no-repeat;
+        background-size: cover;
         flex: none;
         .heading-section2 {
             margin-bottom: 40px;
@@ -1379,7 +1395,7 @@
                 margin-top: 4px;
                 h4 {
                     margin-bottom: 1px;
-                }              
+                }               
             }
         }       
     }
@@ -1391,6 +1407,7 @@
         width: 50%;
         padding: 110px 0px 120px 214px;
         background: url(./../../assets/images/section/bg-testimonials-2.png) center no-repeat;
+        background-size: cover;
         .images {
             width: 110px; 
             height: 200px;
@@ -2007,6 +2024,9 @@
                 cursor          : pointer;
                 color: $color-2;
                 width: 45%;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
                 // width: 100%;
                 @include transition3;
                 &.active {
@@ -2749,21 +2769,21 @@
         .heading-section {
             margin-bottom: 54px;
         }
-        .wrap-pricing {
-            .image-box {
-                background: url(./../../assets/images/img-box/bg-pricing.jpg) center center no-repeat;
-                background-size: cover;
-                padding: 15px 15px;
-                text-align: center;
-                height: 265px;
-            }
-            .box {
-                padding: 38px 50px 45px;
-                .check {
-                    margin-bottom: 41px;
-                }
+        
+        .image-box {
+            background: url(./../../assets/images/img-box/bg-pricing.jpg) center center no-repeat;
+            background-size: cover;
+            padding: 15px 15px;
+            text-align: center;
+            height: 265px;
+        }
+        .box {
+            padding: 38px 50px 45px;
+            .check {
+                margin-bottom: 41px;
             }
         }
+       
     }
 }
 

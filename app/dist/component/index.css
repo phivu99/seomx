@@ -1257,6 +1257,7 @@ path.two {
   border: 2px solid #fff;
   margin-right: 10px;
   border-radius: 50%;
+  flex: none;
 }
 .flat-subscribe .images {
   padding-left: 57px;
@@ -1918,6 +1919,20 @@ path.two {
   background-color: #fff;
   border-radius: 12px;
   padding: 25px 15px 20px;
+  position: relative;
+}
+.diagram-box .diagram .content::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background: #fff;
+  clip-path: polygon(50% 0%, 100% 5%, 100% 99%, 0 100%, 0 5%);
+  z-index: -1;
 }
 .diagram-box .diagram .content .sub-title {
   letter-spacing: 2.8px;
@@ -2158,8 +2173,8 @@ path.two {
   background-color: #fff;
   margin-left: -5px;
   border-radius: 12px;
-  padding: 33px 15px 21px 45px;
-  margin-right: 50px;
+  padding: 33px 45px 21px 45px;
+  display: inline-flex;
 }
 .flat-partners .wrap-partners .box-partners .counter-box {
   position: relative;
@@ -2283,6 +2298,7 @@ path.two {
   padding: 131px 97px 122px 307px;
   width: 50%;
   background: url(./../../assets/images/section/bg-testimonials-1.png) center no-repeat;
+  background-size: cover;
   flex: none;
 }
 .flat-testimonials .box-testi .heading-section2 {
@@ -2339,6 +2355,7 @@ path.two {
   width: 50%;
   padding: 110px 0px 120px 214px;
   background: url(./../../assets/images/section/bg-testimonials-2.png) center no-repeat;
+  background-size: cover;
 }
 .flat-testimonials .box-images .images {
   width: 110px;
@@ -2988,6 +3005,9 @@ path.two {
   cursor: pointer;
   color: #120A21;
   width: 45%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3741,17 +3761,17 @@ path.two {
 .flat-pricing.page .heading-section {
   margin-bottom: 54px;
 }
-.flat-pricing.page .wrap-pricing .image-box {
+.flat-pricing.page .image-box {
   background: url(./../../assets/images/img-box/bg-pricing.jpg) center center no-repeat;
   background-size: cover;
   padding: 15px 15px;
   text-align: center;
   height: 265px;
 }
-.flat-pricing.page .wrap-pricing .box {
+.flat-pricing.page .box {
   padding: 38px 50px 45px;
 }
-.flat-pricing.page .wrap-pricing .box .check {
+.flat-pricing.page .box .check {
   margin-bottom: 41px;
 }
 
